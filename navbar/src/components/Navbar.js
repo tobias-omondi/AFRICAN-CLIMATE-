@@ -90,7 +90,7 @@ const Navbar = () => {
           <Stack
             direction="row"
             spacing={5}
-            sx={{ color: 'black', display: { xs: 'none', md: 'flex' }, textDecoration: 'none', mr: '15rem' }}
+            sx={{ color: 'black', display: { xs: 'none', md: 'flex' }, textDecoration: 'none', justifyContent:'space-evenly' }}
             className='Navbar_desctop_menu'
           >
             <Button color='inherit'>
