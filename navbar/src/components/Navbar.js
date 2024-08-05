@@ -3,7 +3,6 @@ import { AppBar, Toolbar, IconButton, Typography, Stack, Button, Menu, MenuItem 
 import { Link } from 'react-router-dom';
 import CatchingPokemonIcon from '@mui/icons-material/CatchingPokemon';
 import MenuIcon from '@mui/icons-material/Menu';
-import './Navbar.css'; // Keep your existing CSS file if needed
 
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
