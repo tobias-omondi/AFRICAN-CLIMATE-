@@ -1,0 +1,5 @@
+.navbar-desktop-menu {
+    display: flex;
+    gap: 20px;
+    color: black;
+  }

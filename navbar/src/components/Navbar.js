@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import { AppBar, Toolbar, IconButton, Typography, Stack, Button, Menu, MenuItem } from '@mui/material';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 import CatchingPokemonIcon from '@mui/icons-material/CatchingPokemon';
 import MenuIcon from '@mui/icons-material/Menu';
+import './Navbar.css'
 
 const Navbar = () => {
 
@@ -38,7 +39,8 @@ const Navbar = () => {
                 My Web
             </Typography>
                 {/* navigation buttons & Links for DEsktop */}
-                <Stack direction="row" spacing={4} sx={{ color: 'black', display: { xs: 'none', md: 'flex' } }}>
+                <Stack direction="row" spacing={4} sx={{ color: 'black', display: { xs: 'none', md: 'flex' } }}
+                className='Navbar_desctop_menu'>
                     <Button color='inherit'>
                         <Link to='/'>HOME</Link>
                     </Button>
