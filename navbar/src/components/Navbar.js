@@ -117,7 +117,7 @@ const Navbar = () => {
                 <CatchingPokemonIcon />
                 </IconButton>
           <Typography variant="h5" component="div" sx={{ flexGrow: 1, color: 'black', display: { xs: 'flex', md: 'none' } }}>
-          My Web
+          Web
         </Typography>
         </Toolbar>
       </AppBar>
