@@ -1,5 +1,65 @@
-.navbar-desktop-menu {
+/* Navbar.css */
+
+.navbar {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .navbar-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    color: blue;
+  }
+  
+  .navbar-title {
+    flex-grow: 1;
+    color: black;
+  }
+  
+  .navbar-desktop-menu {
     display: flex;
     gap: 20px;
     color: black;
   }
+  
+  .navbar-desktop-menu a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .navbar-desktop-menu a:hover {
+    color: white;
+  }
+  
+  .navbar-mobile-menu {
+    color: black;
+  }
+  
+  .navbar-mobile-icon {
+    color: black;
+  }
+  
+  .navbar-mobile-logo {
+    color: blue;
+  }
+  
+  .navbar-mobile-title {
+    flex-grow: 1;
+    color: black;
+  }
+  
+  .menu-link {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .menu-link:hover {
+    color: white;
+  }
+  

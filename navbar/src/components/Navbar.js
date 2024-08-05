@@ -39,7 +39,7 @@ const Navbar = () => {
                 My Web
             </Typography>
                 {/* navigation buttons & Links for DEsktop */}
-                <Stack direction="row" spacing={4} sx={{ color: 'black', display: { xs: 'none', md: 'flex' }, textDecoration:'none' }}
+                <Stack direction="row" spacing={5} sx={{ color: 'black', display: { xs: 'none', md: 'flex' }, textDecoration:'none', mr:'15rem' }}
                 className='Navbar_desctop_menu'>
                     <Button color='inherit'>
                         <Link to='/'>HOME</Link>
@@ -114,7 +114,7 @@ const Navbar = () => {
                 edge="start"
                 color="inherit"
                 aria-label="logo"
-                sx={{ color: 'blue', display: { xs: 'flex', md: 'none' } }}
+                sx={{ color: 'blue', display: { xs: 'flex', md: 'none' }, ml:'12rem' }}
                  >
                 <CatchingPokemonIcon />
                 </IconButton>
