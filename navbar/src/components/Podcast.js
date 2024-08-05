@@ -4,6 +4,7 @@ const Podcast = () => {
   return (
     <div>
       <h1>Podcast</h1>
+      <h1>Podcast</h1>
     </div>
   )
 }

@@ -3,7 +3,7 @@ import { AppBar, Toolbar, IconButton, Typography, Stack, Button, Menu, MenuItem 
 import { Link } from 'react-router-dom';
 import CatchingPokemonIcon from '@mui/icons-material/CatchingPokemon';
 import MenuIcon from '@mui/icons-material/Menu';
-import './Navbar.css';
+import './Navbar.css'; // Keep your existing CSS file if needed
 
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <div>
       <AppBar position='fixed' sx={{ backgroundColor: 'white' }}>
-        <Toolbar sx={{justifyContent:'space-between'}}>
+        <Toolbar sx={{ justifyContent: 'space-between' }}>
           {/* Logo and title for mobile phone */}
           <IconButton
             size="large"
@@ -30,7 +30,7 @@ const Navbar = () => {
           >
             <CatchingPokemonIcon />
           </IconButton>
-          
+
           {/* Menu for mobile phones */}
           <Stack direction='row' spacing={3} sx={{ color: 'black', display: { xs: 'flex', md: 'none' } }}>
             <IconButton size="large" edge="start" color="inherit" sx={{ color: 'black' }} onClick={openMenu}>
@@ -48,22 +48,22 @@ const Navbar = () => {
               sx={{ color: 'blue', display: { xs: 'flex', md: 'none' } }}
             >
               <MenuItem onClick={closeMenu}>
-                <Link to="/">HOME</Link>
+                <Link to="/" style={{ textDecoration: 'none', color: 'black' }}>HOME</Link>
               </MenuItem>
               <MenuItem onClick={closeMenu}>
-                <Link to="/about">ABOUT</Link>
+                <Link to="/about" style={{ textDecoration: 'none', color: 'black' }}>ABOUT</Link>
               </MenuItem>
               <MenuItem onClick={closeMenu}>
-                <Link to="/news">NEWS</Link>
+                <Link to="/news" style={{ textDecoration: 'none', color: 'black' }}>NEWS</Link>
               </MenuItem>
               <MenuItem onClick={closeMenu}>
-                <Link to="/documentaries">DOCUMENTARIES</Link>
+                <Link to="/documentaries" style={{ textDecoration: 'none', color: 'black' }}>DOCUMENTARIES</Link>
               </MenuItem>
               <MenuItem onClick={closeMenu}>
-                <Link to="/podcast">PODCAST</Link>
+                <Link to="/podcast" style={{ textDecoration: 'none', color: 'black' }}>PODCAST</Link>
               </MenuItem>
               <MenuItem onClick={closeMenu}>
-                <Link to="/contact">CONTACT</Link>
+                <Link to="/contact" style={{ textDecoration: 'none', color: 'black' }}>CONTACT</Link>
               </MenuItem>
             </Menu>
           </Stack>
@@ -90,28 +90,29 @@ const Navbar = () => {
           <Stack
             direction="row"
             spacing={5}
-            sx={{ color: 'black', display: { xs: 'none', md: 'flex' }, textDecoration: 'none', justifyContent:'space-evenly' }}
+            sx={{ color: 'black', display: { xs: 'none', md: 'flex' }, justifyContent: 'space-evenly' }}
             className='Navbar_desctop_menu'
           >
             <Button color='inherit'>
-              <Link to='/'>HOME</Link>
+              <Link to='/' style={{ textDecoration: 'none', color: 'black' }}>HOME</Link>
             </Button>
             <Button color='inherit'>
-              <Link to='about'>About</Link>
+              <Link to='/about' style={{ textDecoration: 'none', color: 'black' }}>ABOUT</Link>
             </Button>
             <Button color='inherit'>
-              <Link to='news'>NEWS</Link>
+              <Link to='/news' style={{ textDecoration: 'none', color: 'black' }}>NEWS</Link>
             </Button>
             <Button color='inherit'>
-              <Link to='documentaries'>DOCUMENTARIES</Link>
+              <Link to='/documentaries' style={{ textDecoration: 'none', color: 'black' }}>DOCUMENTARIES</Link>
             </Button>
             <Button color='inherit'>
-              <Link to='podcast'>PODCAST</Link>
+              <Link to='/podcast' style={{ textDecoration: 'none', color: 'black' }}>PODCAST</Link>
             </Button>
             <Button color='inherit'>
-              <Link to='contact'>CONTACT</Link>
+              <Link to='/contact' style={{ textDecoration: 'none', color: 'black' }}>CONTACT</Link>
             </Button>
           </Stack>
+
         </Toolbar>
       </AppBar>
     </div>
