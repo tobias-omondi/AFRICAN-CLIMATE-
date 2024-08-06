@@ -25,7 +25,7 @@ const Navbar = () => {
             edge="start"
             color="inherit"
             aria-label="logo"
-            sx={{ color: 'blue', display: { xs: 'flex', md: 'none' } }}
+            sx={{ color: 'black', display: { xs: 'flex', md: 'none' } }}
           >
             <CatchingPokemonIcon />
           </IconButton>
@@ -48,27 +48,23 @@ const Navbar = () => {
             >
               <MenuItem onClick={closeMenu}>
                 <Link to="/" style={{ textDecoration: 'none', color: 'black' ,   transition: 'color 0.3s ease',
-                  ':hover': { backgroundColor: 'dodgerblue',}}}>HOME</Link>
+                  '&:hover': { backgroundColor: 'dodgerblue',}}}>HOME</Link>
               </MenuItem>
               <MenuItem onClick={closeMenu}>
                 <Link to="/about" style={{ textDecoration: 'none', color: 'black' ,   transition: 'color 0.3s ease',
-                  ':hover': { backgroundColor: 'dodgerblue',} }}>ABOUT</Link>
-              </MenuItem>
-              <MenuItem onClick={closeMenu}>
-                <Link to="/news" style={{ textDecoration: 'none', color: 'black'  ,   transition: 'color 0.3s ease',
-                  ':hover': { backgroundColor: 'dodgerblue',}}}>NEWS</Link>
+                  '&:hover': { backgroundColor: 'dodgerblue',}}}>NEWS</Link>
               </MenuItem>
               <MenuItem onClick={closeMenu}>
                 <Link to="/documentaries" style={{ textDecoration: 'none', color: 'black' ,   transition: 'color 0.3s ease',
-                  ':hover': { backgroundColor: 'dodgerblue',} }}>DOCUMENTARIES</Link>
+                   '&:hover': { backgroundColor: 'dodgerblue', }, }}>DOCUMENTARIES</Link>
               </MenuItem>
               <MenuItem onClick={closeMenu}>
                 <Link to="/podcast" style={{ textDecoration: 'none', color: 'black',   transition: 'color 0.3s ease',
-                  ':hover': { backgroundColor: 'dodgerblue',} }}>PODCAST</Link>
+                  '&:hover': { backgroundColor: 'dodgerblue',} }}>PODCAST</Link>
               </MenuItem>
               <MenuItem onClick={closeMenu}>
                 <Link   to="/contact" style={{ textDecoration: 'none',   color: 'black',   transition: 'color 0.3s ease',
-                  ':hover': { backgroundColor: 'dodgerblue',} }}>CONTACT</Link>
+                  '&:hover': { backgroundColor: 'dodgerblue',} }}>CONTACT</Link>
               </MenuItem>
             </Menu>
           </Stack>
