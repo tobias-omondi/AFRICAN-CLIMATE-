@@ -52,6 +52,10 @@ const Navbar = () => {
               </MenuItem>
               <MenuItem onClick={closeMenu}>
                 <Link to="/about" style={{ textDecoration: 'none', color: 'black' ,   transition: 'color 0.3s ease',
+                  '&:hover': { backgroundColor: 'dodgerblue',}}}>ABOUT</Link>
+              </MenuItem>
+              <MenuItem onClick={closeMenu}>
+                <Link to="/news" style={{ textDecoration: 'none', color: 'black' ,   transition: 'color 0.3s ease',
                   '&:hover': { backgroundColor: 'dodgerblue',}}}>NEWS</Link>
               </MenuItem>
               <MenuItem onClick={closeMenu}>
