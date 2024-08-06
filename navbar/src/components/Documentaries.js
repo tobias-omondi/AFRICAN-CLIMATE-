@@ -4,7 +4,7 @@ const Documentaries = () => {
   return (
     <div>
       <h1>DOCUMENTARIES</h1>
-      <h3>DOCUS</h3>
+      <p>This is a Docs page</p>
     </div>
   )
 }

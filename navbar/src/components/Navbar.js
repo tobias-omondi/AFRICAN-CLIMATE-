@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <AppBar position='fixed' sx={{ backgroundColor: 'white' }}>
+      <AppBar position='fixed' sx={{ backgroundColor: 'dodgerblue' }}>
         <Toolbar sx={{ justifyContent: 'space-between' }}>
           {/* Logo and title for mobile phone */}
           <IconButton
@@ -44,25 +44,31 @@ const Navbar = () => {
                   width: '250px',
                 },
               }}
-              sx={{ color: 'blue', display: { xs: 'flex', md: 'none' } }}
+              sx={{ color: 'black', display: { xs: 'flex', md: 'none' } }}
             >
               <MenuItem onClick={closeMenu}>
-                <Link to="/" style={{ textDecoration: 'none', color: 'black' }}>HOME</Link>
+                <Link to="/" style={{ textDecoration: 'none', color: 'black' ,   transition: 'color 0.3s ease',
+                  ':hover': { backgroundColor: 'dodgerblue',}}}>HOME</Link>
               </MenuItem>
               <MenuItem onClick={closeMenu}>
-                <Link to="/about" style={{ textDecoration: 'none', color: 'black' }}>ABOUT</Link>
+                <Link to="/about" style={{ textDecoration: 'none', color: 'black' ,   transition: 'color 0.3s ease',
+                  ':hover': { backgroundColor: 'dodgerblue',} }}>ABOUT</Link>
               </MenuItem>
               <MenuItem onClick={closeMenu}>
-                <Link to="/news" style={{ textDecoration: 'none', color: 'black' }}>NEWS</Link>
+                <Link to="/news" style={{ textDecoration: 'none', color: 'black'  ,   transition: 'color 0.3s ease',
+                  ':hover': { backgroundColor: 'dodgerblue',}}}>NEWS</Link>
               </MenuItem>
               <MenuItem onClick={closeMenu}>
-                <Link to="/documentaries" style={{ textDecoration: 'none', color: 'black' }}>DOCUMENTARIES</Link>
+                <Link to="/documentaries" style={{ textDecoration: 'none', color: 'black' ,   transition: 'color 0.3s ease',
+                  ':hover': { backgroundColor: 'dodgerblue',} }}>DOCUMENTARIES</Link>
               </MenuItem>
               <MenuItem onClick={closeMenu}>
-                <Link to="/podcast" style={{ textDecoration: 'none', color: 'black' }}>PODCAST</Link>
+                <Link to="/podcast" style={{ textDecoration: 'none', color: 'black',   transition: 'color 0.3s ease',
+                  ':hover': { backgroundColor: 'dodgerblue',} }}>PODCAST</Link>
               </MenuItem>
               <MenuItem onClick={closeMenu}>
-                <Link to="/contact" style={{ textDecoration: 'none', color: 'black' }}>CONTACT</Link>
+                <Link   to="/contact" style={{ textDecoration: 'none',   color: 'black',   transition: 'color 0.3s ease',
+                  ':hover': { backgroundColor: 'dodgerblue',} }}>CONTACT</Link>
               </MenuItem>
             </Menu>
           </Stack>
