@@ -109,7 +109,7 @@ const Navbar = () => {
             <Menu
               open={menuOpen}
               onClose={closeMenu}
-              PaperProps={{ sx: { width: '200px', ml:'8rem'} }}
+              PaperProps={{ sx: { width: '280px', ml:'3.5rem',mt:'40px'} }}
             >
               {menuItems.map((item) => (
                 <div key={item.label}>
