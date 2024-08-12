@@ -97,11 +97,42 @@ const Navbar = () => {
               PaperProps={{ sx: { width: '250px' } }}
             >
               {menuItems.map((item) => (
-                <MenuItem key={item.label} onClick={closeMenu}>
-                  <Link to={item.path} style={{ textDecoration: 'none', color: 'black' }}>
-                    {item.label}
-                  </Link>
-                </MenuItem>
+                <div key={item.label}>
+                  <MenuItem onClick={(event) => {
+                    if (item.hasDropdown) {
+                      closeMenu(); // Close the main menu
+                      if (item.label === 'NEWS & MEDIA') {
+                        handleNewsMenuOpen(event);
+                      } else if (item.label === 'ADVOCACY & CAMPAIGNS') {
+                        handleAdvocacyMenuOpen(event);
+                      } else if (item.label === 'INTERVIEWS') {
+                        handleInterviewsMenuOpen(event);
+                      }
+                    } else {
+                      closeMenu(); // Close the main menu if no dropdown
+                    }
+                  }}>
+                    <Link to={item.path} style={{ textDecoration: 'none', color: 'black' }}>
+                      {item.label}
+                    </Link>
+                  </MenuItem>
+                  {item.hasDropdown && (
+                    <Menu
+                      anchorEl={item.label === 'NEWS & MEDIA' ? newsMenuOpen : item.label === 'ADVOCACY & CAMPAIGNS' ? advocacyMenuOpen : interviewsMenuOpen}
+                      open={item.label === 'NEWS & MEDIA' ? Boolean(newsMenuOpen) : item.label === 'ADVOCACY & CAMPAIGNS' ? Boolean(advocacyMenuOpen) : Boolean(interviewsMenuOpen)}
+                      onClose={handleNewsMenuClose}
+                      PaperProps={{ sx: { width: '250px' } }}
+                    >
+                      {(item.label === 'NEWS & MEDIA' ? newsDropdownItems : item.label === 'ADVOCACY & CAMPAIGNS' ? advocacyDropdownItems : interviewsDropdownItems).map((dropdownItem) => (
+                        <MenuItem key={dropdownItem.label} onClick={closeMenu}>
+                          <Link to={dropdownItem.path} style={{ textDecoration: 'none', color: 'black' }}>
+                            {dropdownItem.label}
+                          </Link>
+                        </MenuItem>
+                      ))}
+                    </Menu>
+                  )}
+                </div>
               ))}
             </Menu>
           </Stack>
