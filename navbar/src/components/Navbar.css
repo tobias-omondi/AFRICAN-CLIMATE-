@@ -1,9 +1,9 @@
 .logo-image{
-    max-width: 280px;
+    max-width: 300px;
     mix-blend-mode: multiply;
 }
 .logo-image-mobile{
-    max-width: 150px;
+    max-width: 60px;
     mix-blend-mode: multiply;
     display: space-between;
 }
