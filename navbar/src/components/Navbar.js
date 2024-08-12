@@ -93,7 +93,6 @@ const Navbar = () => {
   ];
 
   return (
-    <div>
       <AppBar position='fixed' sx={{ backgroundColor: 'dodgerblue' }}>
         <Toolbar sx={{ justifyContent: 'space-between' }}>
           {/* Logo and title for mobile */}
@@ -250,7 +249,6 @@ const Navbar = () => {
           </Stack>
         </Toolbar>
       </AppBar>
-    </div>
   );
 };
 
