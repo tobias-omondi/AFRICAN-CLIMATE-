@@ -1,5 +1,5 @@
 .logo-image{
-    max-width: 300px;
+    max-width: 250px;
     mix-blend-mode: multiply;
 }
 .logo-image-mobile{
@@ -7,3 +7,122 @@
     mix-blend-mode: multiply;
     display: space-between;
 }
+.navbar {
+    width: 100%;
+    background-color: dodgerblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    position: relative;
+  }
+  
+  .nav-links {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+  }
+  
+  .dropdown-toggle {
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  
+  .dropdown-menu.active {
+    display: block;
+  }
+  
+  .dropdown-item {
+    padding: 10px 20px;
+  }
+  
+  .dropdown-links {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nav-menu.active {
+    display: flex;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+  
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: white;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      z-index: 1;
+    }
+  
+    .nav-menu.active {
+      display: flex;
+    }
+  
+    .nav-item {
+      width: 100%;
+    }
+  
+    .nav-links {
+      padding: 15px 20px;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .dropdown-menu {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      box-shadow: none;
+    }
+  
+    .dropdown-item {
+      padding: 10px 0;
+    }
+  }
+  
