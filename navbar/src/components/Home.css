@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -5,18 +6,65 @@
 }
 
 .home_container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     min-height: 100vh; 
     overflow: auto; 
-    padding-top: 64px;
-}
-
-.image-home img {
-    background-size: cover;
+    padding-top: 64px; /* Adjust this based on your Navbar's height */
+    font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .image-home {
     width: 100%;
     height: auto; 
     object-fit: cover;
+    margin-bottom: 20px; /* Space between main image and sections */
 }
+.section-img-container {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin-left: 5rem;
+    margin-top: 5%;
+    position: relative;
+}
+.section-img-container p {
+    width: 40%;
+    margin-left: 11rem;
+    margin-top: 1.5rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-family: "Merriweather", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.section2-img img {
+    max-width: 530px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+.section1-img{
+    max-width: 600px;
+    height: auto;
+    max-height: 100vh;
+}
+.section2-img{
+    max-width: 400px;
+    max-height: 900vh;
+}
+
+
+/* .section-img-container img {
+    mix-blend-mode: multiply;
+    margin-top: 10%;
+    max-width: 500px; 
+    height: auto; 
+    object-fit: cover;
+    border-radius: 8px; 
+} */
