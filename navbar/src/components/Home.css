@@ -4,25 +4,49 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 .home_container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     min-height: 100vh; 
+    margin-top: 10%;
     overflow: auto; 
-    padding-top: 64px; /* Adjust this based on your Navbar's height */
     font-family: "Merriweather", serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.image-home {
+    font-weight: 500;
+    font-style: normal;
+    background-image: url('https://media.istockphoto.com/id/1350387478/video/aerial-fly-over-view-of-thin-free-roaming-cattle-in-search-of-food-and-water-drought-climate.jpg?s=640x640&k=20&c=gS05qs_5xCewglbughSO5T4HORy9hj9XjJ8f3rP8xQM=');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
     width: 100%;
     height: auto; 
+    position: relative;
+    color: white; 
     object-fit: cover;
-    margin-bottom: 20px; /* Space between main image and sections */
 }
+.landing-container h2 {
+    z-index: 1; 
+    margin-left: 3.5rem;
+    padding: 20px;
+    margin-top: 14%;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.3);
+    filter: grayscale(90%);
+    font-size: 3em;
+}
+
+.landing-container button {
+    z-index: 1; 
+    margin-top: 20px;
+    padding: 10px 20px; 
+    background-color: orange;
+    color: white; 
+    border: none; 
+    cursor: pointer;
+    width: 20%;
+    margin-left: 7rem;
+    font-size: 1.5em;
+}
+
 .section-img-container {
     flex-direction: column;
     justify-content: center;
@@ -40,31 +64,45 @@
     font-weight: 500;
     font-style: normal;
 }
-.section2-img img {
-    max-width: 530px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-
-
 .section1-img{
     max-width: 600px;
     height: auto;
     max-height: 100vh;
 }
+
 .section2-img{
     max-width: 400px;
     max-height: 900vh;
 }
 
 
-/* .section-img-container img {
-    mix-blend-mode: multiply;
-    margin-top: 10%;
-    max-width: 500px; 
-    height: auto; 
-    object-fit: cover;
-    border-radius: 8px; 
-} */
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .landing-container h2 {
+        margin-left: 1rem; 
+        width: 90%; 
+        font-size: 2.5em; 
+        padding: 20px; 
+    }
+
+    .landing-container button {
+        width: 50%; 
+        margin-left: 1rem; 
+        font-size: 1.2em; 
+        padding: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .landing-container h2 {
+        font-size: 2em; 
+        padding: 10px; 
+    }
+
+    .landing-container button {
+        width: 60%; 
+        font-size: 1em; 
+        padding: 8px; 
+    }
+}
