@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -8,7 +9,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh; 
-    margin-top: 10%;
+    margin-top: 0;
     overflow: auto; 
     font-family: "Merriweather", serif;
     font-weight: 500;
@@ -46,41 +47,144 @@
     margin-left: 7rem;
     font-size: 1.5em;
 }
-
-.section-img-container {
-    flex-direction: column;
+.section-img-container{
+    display: flex;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap; 
-    margin-left: 5rem;
+    justify-content: space-between;
     margin-top: 5%;
-    position: relative;
 }
-.section-img-container p {
-    width: 40%;
-    margin-left: 11rem;
-    margin-top: 1.5rem;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    font-family: "Merriweather", serif;
-    font-weight: 500;
+.section-img-container img {
+    align-items: center;
+    justify-content: center;
+}
+.section1-img {
+    max-width: 550px;
+    margin-left: 2em;
+}
+.section2-img {
+    max-width: 650px;
+    mix-blend-mode: multiply;
+}
+.section-pagrh{
+    width: 60%;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    margin-left: 5em;
+    margin-top: -7em;
+    padding: 10px 12px ;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
     font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
 }
-.section1-img{
-    max-width: 600px;
-    height: auto;
-    max-height: 100vh;
+.section-pagrh p {
+    width: 70%;
+    font-size: 20px;
 }
-
-.section2-img{
-    max-width: 400px;
-    max-height: 900vh;
-}
-
-
-
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
+/* Media Queries for iPadOS (iPads in both portrait and landscape modes) */
+@media (min-width: 768px) and (max-width: 1024px) {
     .landing-container h2 {
         margin-left: 1rem; 
+        width: 85%; 
+        font-size: 2.2em; 
+        padding: 20px; 
+    }
+
+    .landing-container button {
+        width: 50%; 
+        margin-left: 1rem; 
+        font-size: 1.2em; 
+        padding: 10px; 
+    }
+
+    .section-img-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10%;
+    }
+    .section1-img {
+        max-width: 450px;
+        margin-left: 0em;
+    }
+    .section2-img {
+        max-width: 500px;
+        mix-blend-mode: multiply;
+        margin-top: 40%;
+    }
+    .section-pagrh {
+        width: 95%;
+        margin-left: 0em;
+        margin-top: -35em;
+        padding: 12px 15px;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings:
+          "wdth" 100;
+    }
+    .section-pagrh p {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+/* Additional Media Queries for Smaller iPads (e.g., iPad Mini) */
+@media (max-width: 768px) {
+    .landing-container h2 {
+        margin-left: 0.5rem; 
+        width: 90%; 
+        font-size: 2em; 
+        padding: 15px; 
+    }
+
+    .landing-container button {
+        width: 55%; 
+        margin-left: 0.5rem; 
+        font-size: 1.1em; 
+        padding: 8px; 
+    }
+
+    .section-img-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15%;
+    }
+    .section1-img {
+        max-width: 400px;
+        margin-left: 0em;
+    }
+    .section2-img {
+        max-width: 450px;
+        mix-blend-mode: multiply;
+        margin-top: 60%;
+    }
+    .section-pagrh {
+        width: 100%;
+        margin-left: 0em;
+        margin-top: -30em;
+        padding: 10px 12px;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings:
+          "wdth" 100;
+    }
+    .section-pagrh p {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+/* Media Queries for Responsive Design  mini ipads*/
+@media (max-width: 768px) {
+    .landing-container h2 {
+        margin-left: 0.5rem; 
         width: 90%; 
         font-size: 2.5em; 
         padding: 20px; 
@@ -92,17 +196,96 @@
         font-size: 1.2em; 
         padding: 10px; 
     }
+    /* part of image style and introduction css */
+    .section-img-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+        margin-top: 15%;
+    }
+    .section1-img {
+        max-width: 450px;
+        margin-left: 0em;
+    }
+    .section2-img {
+        max-width: 500px;
+        mix-blend-mode: multiply;
+        margin-top: 50%;
+    }
+    .section-pagrh{
+        width: 100%;
+        /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+        margin-left: 0em;
+        margin-top: -45em;
+        padding: 10px 12px ;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings:
+          "wdth" 100;
+    }
+    .section-pagrh p {
+        width: 100%;
+        font-size: 15px;
+    }
 }
 
+
 @media (max-width: 480px) {
+    .home_container {
+        background-image: url('https://www.afro.who.int/sites/default/files/2023-05/SHUTTERSTOCK%20Credit%20-%20Vegetation%20contrast.jpg');
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto; 
+    }
     .landing-container h2 {
         font-size: 2em; 
-        padding: 10px; 
+        padding: 30px; 
+        margin-top: 50%;
     }
 
     .landing-container button {
         width: 60%; 
         font-size: 1em; 
         padding: 8px; 
+    }
+
+    /* part of image style and introduction css */
+    .section-img-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+        margin-top: 15%;
+    }
+    .section1-img {
+        max-width: 300px;
+        margin-left: 0em;
+    }
+    .section2-img {
+        max-width: 320px;
+        mix-blend-mode: multiply;
+        margin-top: 70%;
+    }
+    .section-pagrh{
+        width: 100%;
+        /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+        margin-left: 0em;
+        margin-top: -34em;
+        padding: 20px 10px 20px ;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings:
+          "wdth" 100;
+    }
+    .section-pagrh p {
+        width: 100%;
+        font-size: 15px;
     }
 }

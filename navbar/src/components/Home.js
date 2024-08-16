@@ -13,12 +13,19 @@ const Home = () => {
         <Button type='submit'>Sign-Up</Button>
       </div>
       </div>
-      
+
       <div className='section-img-container'>
         <img src={section1} alt="Section 1" className='section1-img' />
-        <p>Our mission is to empower communities and stakeholders by providing accessible resources, expert insights, and a collaborative space for dialogue...</p>
+        <img src={section2} alt="Section 2" className='section2-img' />
       </div>
-      <img src={section2} alt="Section 2" className='section2-img' />
+      <div className='section-pagrh'>
+        <p>Our mission is to empower communities and stakeholders by providing accessible resources, 
+          expert insights, and a collaborative space for dialogue, fostering a shared vision for a 
+          sustainable and equitable future.** We strive to bridge gaps, amplify diverse voices, 
+          and catalyze collective action to address pressing challenges and create thriving 
+          communities. Through our work, we aim to build a more just, inclusive, and resilient world for all. 
+        </p>
+        </div>
     </>
   );
 }
