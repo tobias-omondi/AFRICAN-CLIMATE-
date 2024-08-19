@@ -38,14 +38,12 @@ const Home = () => {
         <img src={section1} alt="Section 1" className='section1-img' data-aos="fade-up" />
           {/* Paragraph Section */}
       <div className='section-pagrh' data-aos="fade-up" data-aos-delay="200">
-        <h1>OUR MISSION.</h1>
-
+        <h1>INTRODUCTION.</h1>
         <p>
-          Our mission is to empower communities and stakeholders by providing accessible resources,
-          expert insights, and a collaborative space for dialogue, fostering a shared vision for a
-          sustainable and equitable future. We strive to bridge gaps, amplify diverse voices,
-          and catalyze collective action to address pressing challenges and create thriving
-          communities. Through our work, we aim to build a more just, inclusive, and resilient world for all.
+            Welcome to our platform, where we are committed to fostering collaboration and dialogue to drive sustainable 
+            change across the African continent. We provide accessible resources, expert insights, and a space for diverse
+            voices to come together. Our goal is to bridge gaps, empower communities, and create a more just, inclusive, and 
+            resilient future for all. Join us in our journey towards a thriving and equitable world.
         </p>
       </div>
 
