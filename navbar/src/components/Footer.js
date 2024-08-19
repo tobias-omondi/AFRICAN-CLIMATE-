@@ -18,7 +18,7 @@ const Footer = () => {
       }, []);
 
   return (
-    <div className='footer' data-aos= 'fade-up' data-aos-delay="100">
+    <div className='footer'>
         <div className='footer_line_one'>
             <h2>AFRICAN CLIMATIC VINTAGE.</h2>
         <div className='social-media'>
