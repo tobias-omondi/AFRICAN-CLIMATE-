@@ -9,6 +9,7 @@
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .footer_line_one{
     display: flex;
@@ -24,7 +25,11 @@
       "wdth" 100;
     padding: 20px;
 }
+.footer_line_one h2 {
+    margin-top: 5%;
+}
 .social-media {
+    margin-top: 5%;
     display: flex;
     justify-content: center;
     gap: 20px;

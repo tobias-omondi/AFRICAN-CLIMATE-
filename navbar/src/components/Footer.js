@@ -1,11 +1,24 @@
-import React from 'react';
+import React ,{useEffect} from 'react';
 import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faYoutube, faTiktok, faTwitter,faFacebook } from '@fortawesome/free-brands-svg-icons';
+import AOS from 'aos';
+import 'aos/dist/aos.css';  // Make sure this line is present to include AOS CSS
 
 const Footer = () => {
+
+    useEffect(() => {
+        AOS.init({ 
+          duration: 1000, // Animation duration
+          easing: 'ease-in-out', // Easing function
+          once: true, // Whether animation should happen only once
+          mirror: false, // Whether elements should animate out while scrolling past them
+          delay: 200, // Delay between animations
+        });
+      }, []);
+
   return (
-    <div className='footer'>
+    <div className='footer' data-aos= 'fade-up' data-aos-delay="100">
         <div className='footer_line_one'>
             <h2>AFRICAN CLIMATIC VINTAGE.</h2>
         <div className='social-media'>
@@ -52,8 +65,8 @@ const Footer = () => {
 
         <div className='subscribe'>
             <h2>SUBSCRIBE NOW.</h2>
-            <input type='EMAIL' name='email' placeholder='EMAIL'  required/>
-            <button type='submit'>SUBMIT</button>
+            <input type='EMAIL' name='email' placeholder='EMAIL'/>
+            <button type='submit'  >SUBMIT</button>
         </div>
         </div>
     </div>
