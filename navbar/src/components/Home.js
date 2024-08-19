@@ -1,31 +1,97 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Home.css';
 import section1 from '../components/ASSET/Rich nations pledge funds at climate crisis summit.jpeg';
-import section2 from '../components/ASSET/Download Detailed Map of Africa Continent in Black Silhouette for free.jpeg';
+import section3 from '../components/ASSET/floods.jpeg';
+import section4 from '../components/ASSET/plantingtrees.jpeg';
+import section5 from '../components/ASSET/drought.jpg';
+import background_section from '../components/ASSET/sun-savanna-African-Kenya-country.webp';
+import Africa from '../components/ASSET/Download Detailed Map of Africa Continent in Black Silhouette for free.jpeg';
+import Footer from './Footer';
 import { Button } from 'react-scroll';
+import AOS from 'aos';
+import 'aos/dist/aos.css';  // Make sure this line is present to include AOS CSS
 
 const Home = () => {
+
+    useEffect(() => {
+      AOS.init({ 
+        duration: 1000, // Animation duration
+        easing: 'ease-in-out', // Easing function
+        once: true, // Whether animation should happen only once
+        mirror: false, // Whether elements should animate out while scrolling past them
+        delay: 200, // Delay between animations
+      });
+    }, []);
+
   return (
     <>
+      {/* Home Container */}
       <div className='home_container' style={{ paddingTop: '64px' }}>
         <div className='landing-container'>
-        <h2>DELIVERING CLIMATIC<br/> TO AFRICAN CONTINENT.</h2>
-        <Button type='submit'>Sign-Up</Button>
-      </div>
+          <h2 data-aos="fade-down">DELIVERING CLIMATIC<br /> TO AFRICAN CONTINENT.</h2>
+          <Button type='submit' data-aos="zoom-in" data-aos-delay="400">Sign-Up</Button>
+        </div>
       </div>
 
+      {/* Section Images */}
       <div className='section-img-container'>
-        <img src={section1} alt="Section 1" className='section1-img' />
-        <img src={section2} alt="Section 2" className='section2-img' />
-      </div>
-      <div className='section-pagrh'>
-        <p>Our mission is to empower communities and stakeholders by providing accessible resources, 
-          expert insights, and a collaborative space for dialogue, fostering a shared vision for a 
-          sustainable and equitable future.** We strive to bridge gaps, amplify diverse voices, 
-          and catalyze collective action to address pressing challenges and create thriving 
-          communities. Through our work, we aim to build a more just, inclusive, and resilient world for all. 
+        <img src={section1} alt="Section 1" className='section1-img' data-aos="fade-up" />
+          {/* Paragraph Section */}
+      <div className='section-pagrh' data-aos="fade-up" data-aos-delay="200">
+        <h1>OUR MISSION.</h1>
+
+        <p>
+          Our mission is to empower communities and stakeholders by providing accessible resources,
+          expert insights, and a collaborative space for dialogue, fostering a shared vision for a
+          sustainable and equitable future. We strive to bridge gaps, amplify diverse voices,
+          and catalyze collective action to address pressing challenges and create thriving
+          communities. Through our work, we aim to build a more just, inclusive, and resilient world for all.
         </p>
+      </div>
+
+      </div>
+      {/* Video Section */}
+      <div className='video-container' style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        minHeight: '500px',
+      }} data-aos="fade-up" data-aos-delay="400">
+        <iframe 
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/rXu9vffJ2XQ?si=rCTWhd2Oxcngssvs" 
+          title="YouTube video player" 
+          frameBorder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerPolicy="strict-origin-when-cross-origin" 
+          allowFullScreen
+        />
+      </div>
+
+      {/* Features Section */}
+      <div className='section3_img'>
+        <img src={background_section} alt="Background Section" data-aos="fade-up" data-aos-delay="300" />
+        <div className='our_features'>
+          <img src={section3} alt="Section 3" data-aos="zoom-in" data-aos-delay="200" />
+          <img src={section4} alt="Section 4" data-aos="zoom-in" data-aos-delay="200" />
+          <img src={section5} alt="Section 5" data-aos="zoom-in" data-aos-delay="200" />
         </div>
+      </div>
+
+      {/* Africa Image Section */}
+      <div className='Africa' style={{
+        marginTop: '20%', 
+        display: 'flex', 
+        alignItems: 'center', 
+        justifyContent: 'center',
+        mixBlendMode:'color-burn'
+      }} data-aos="fade-up" data-aos-delay="300">
+        <img src={Africa} alt='Africa Climate' />
+      </div>
+
+      {/* Footer */}
+      <Footer />
     </>
   );
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../components/ASSET/Africa by graphicsgarageproject.jpeg';
+import logo from '../components/ASSET/footer_logo.jpeg';
 import './Navbar.css';
 
 const Navbar = () => {

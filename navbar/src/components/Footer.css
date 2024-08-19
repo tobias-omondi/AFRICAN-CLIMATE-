@@ -1,0 +1,13 @@
+.footer {
+    background-color: green;
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_logo img {
+    max-width: 300px;
+    mix-blend-mode: color-burn;
+}
