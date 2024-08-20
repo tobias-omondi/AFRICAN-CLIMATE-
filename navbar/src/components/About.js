@@ -22,11 +22,13 @@ const About = () => {
 
     <div className='mission_heading'>
       <div className='about_pargraph'>
-      <h2>ABOUT US</h2>
-      <p>African Climatic Vintage is dedicated to advancing environmental sustainability and resilience across Africa.
-        We connect communities with cutting-edge solutions and resources to tackle climate challenges effectively. 
-        Through our efforts in education, advocacy, and collaborative action, we strive to foster a greener, more sustainable
-        future for the continent, preserving its unique natural heritage for generations to come.</p>
+      <h2>OUR MISSION.</h2>
+      <p>At African Climatic Vintage, our mission is to promote environmental
+         sustainability and resilience across Africa. We empower communities by
+          providing innovative solutions and resources to address climate challenges. 
+          Through education, advocacy, and collaborative action, we aim to build a greener, 
+          more sustainable future for the continent, ensuring the preservation of its unique 
+          natural heritage for future generations.</p>
         </div>
 
         <div className='about_img'>
@@ -98,6 +100,13 @@ const About = () => {
         </div>
       </div>
     </div>
+    <div className='our_vision'>
+        <h2>OUR VISSION</h2>
+        <p>Our vision is to see a thriving Africa where communities live in harmony with nature,
+           embracing sustainable practices that safeguard the environment for future generations. 
+           We envision a continent where innovative solutions drive resilience against climate change,
+            and every individual is empowered to contribute to a sustainable and prosperous future.</p>
+      </div>
     <Footer />
     </>
   )

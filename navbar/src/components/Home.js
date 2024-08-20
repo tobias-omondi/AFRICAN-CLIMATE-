@@ -28,8 +28,8 @@ const Home = () => {
       {/* Home Container */}
       <div className='home_container' style={{ paddingTop: '64px' }}>
         <div className='landing-container'>
-          <h2 data-aos="fade-down">DELIVERING CLIMATIC<br /> TO AFRICAN CONTINENT.</h2>
-          <Button type='submit' data-aos="zoom-in" data-aos-delay="400">Sign-Up</Button>
+          <h2 data-aos="zoom-in">DELIVERING CLIMATIC<br /> TO AFRICAN CONTINENT.</h2>
+          <Button type='submit' data-aos="zoom-in" >Sign-Up</Button>
         </div>
       </div>
 

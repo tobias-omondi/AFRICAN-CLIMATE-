@@ -8,7 +8,6 @@ const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState({
     news: false,
     advocacy: false,
-    interviews: false,
     contact: false,
   });
 
@@ -21,7 +20,6 @@ const Navbar = () => {
     setDropdownOpen({
       news: false,
       advocacy: false,
-      interviews: false,
       contact: false,
     });
   };
@@ -38,27 +36,26 @@ const Navbar = () => {
     { label: 'ABOUT', path: '/about' },
     { label: 'NEWS', path: '/news', hasDropdown: true, dropdownKey: 'news' },
     { label: 'ADVOCACY', path: '/advocacy', hasDropdown: true, dropdownKey: 'advocacy' },
-    { label: 'INTERVIEWS', path: '/interviews', hasDropdown: true, dropdownKey: 'interviews' },
     { label: 'CONTACT', path: '/contact', hasDropdown: true, dropdownKey: 'contact' },
   ];
 
   const dropdownItems = {
     news: [
-      { label: 'Latest News', path: '/news/latest' },
-      { label: 'Documentaries & Videos', path: '/news/documentaries' },
-      { label: 'Podcasts', path: '/news/podcasts' },
-      { label: 'Press Releases', path: '/news/press-releases' },
+      { label: 'Top Stories', path: '/news/top-stories' },
+      { label: 'Climatic Voice', path: '/news/climatic-voice' },
+      { label: 'Investigative', path: '/news/investigative' },
+      { label: 'Community Spotlight', path: '/news/community-spotlight' },
     ],
     advocacy: [
       { label: 'Current Campaigns', path: '/advocacy/current' },
       { label: 'Success Stories', path: '/advocacy/success' },
-      { label: 'Get Involved', path: '/advocacy/get-involved' },
+      { label: 'Policy', path: '/advocacy/policy' },
     ],
-    interviews: [
-      { label: 'Expert Interviews', path: '/interviews/expert' },
-      { label: 'Panel Discussions', path: '/interviews/panel' },
-      { label: 'Webinars', path: '/interviews/webinars' },
-      { label: 'Live Events', path: '/interviews/live' },
+    multimedia: [
+      { label: 'Documentaries', path: '/multimedia/documentaries' },
+      { label: 'Panel Discussion', path: '/multimedia/panel-discussion' },
+      { label: 'Podcast', path: '/multimedia/podcast' },
+      { label: 'Interview', path: '/multimedia/interview' },
     ],
     contact: [
       { label: 'Contact Form', path: '/contact/form' },
