@@ -21,6 +21,7 @@ const Navbar = () => {
       news: false,
       advocacy: false,
       contact: false,
+      multimedia:false
     });
   };
 
@@ -35,6 +36,7 @@ const Navbar = () => {
     { label: 'HOME', path: '/' },
     { label: 'ABOUT', path: '/about' },
     { label: 'NEWS', path: '/news', hasDropdown: true, dropdownKey: 'news' },
+    { label: 'MULTIMEDIA', path: '/multimedia', hasDropdown: true, dropdownKey: 'multimedia' },
     { label: 'ADVOCACY', path: '/advocacy', hasDropdown: true, dropdownKey: 'advocacy' },
     { label: 'CONTACT', path: '/contact', hasDropdown: true, dropdownKey: 'contact' },
   ];

@@ -7,6 +7,7 @@ import News from './components/News';
 import Podcast from './components/Podcast';
 import Contact from './components/Contact';
 import Advocacy from './components/Advocacy';
+import Multimedia from './components/Multimedia';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path='/' element ={<Home />}/>
         <Route path='/about' element ={<About/>}/>
         <Route path='/news' element ={<News/>}/>
+        <Route path='/multimedia' element ={<Multimedia/>}/>
         <Route path='/advocacy' element ={<Advocacy/>}/>
         <Route path='/podcast' element ={<Podcast/>}/>
         <Route path='/contact' element ={<Contact/>}/>
