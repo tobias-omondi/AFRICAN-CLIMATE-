@@ -4,9 +4,9 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
 import News from './components/News';
-import Documentaries from './components/Documentaries';
 import Podcast from './components/Podcast';
 import Contact from './components/Contact';
+import Advocacy from './components/Advocacy';
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <Route path='/' element ={<Home />}/>
         <Route path='/about' element ={<About/>}/>
         <Route path='/news' element ={<News/>}/>
-        <Route path='/documentaries' element ={<Documentaries/>}/>
+        <Route path='/advocacy' element ={<Advocacy/>}/>
         <Route path='/podcast' element ={<Podcast/>}/>
         <Route path='/contact' element ={<Contact/>}/>
       </Routes>

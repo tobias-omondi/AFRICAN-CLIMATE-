@@ -58,7 +58,6 @@ const Navbar = () => {
       { label: 'Interview', path: '/multimedia/interview' },
     ],
     contact: [
-      { label: 'Contact Form', path: '/contact/form' },
       { label: 'Newsletter Sign-up', path: '/contact/newsletter' },
     ],
   };
