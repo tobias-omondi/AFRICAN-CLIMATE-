@@ -87,6 +87,10 @@ const SuccessStories = () => {
           </div>
         </Slider>
       </div>
+      <div className='main_content'>
+          <h2>Empowering Communities Through Food Security Initiatives</h2>
+          <p>In response to the growing challenges of climate change in Africa, African Climatic Vintage is committed to ensuring food security for vulnerable communities. By distributing nutritious, climate-resilient crops, we provide immediate relief while promoting sustainable agricultural practices. These efforts not only address hunger but also empower communities to adapt to environmental changes, fostering resilience and hope for a sustainable future.</p>
+        </div>
       <Footer />
     </>
   );
