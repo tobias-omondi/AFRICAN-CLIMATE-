@@ -1,8 +1,10 @@
 import React from 'react';
 import './Policy.css'; 
+import Footer from './Footer';
 
 const Policy = () => {
   return (
+    <>
     <div className="policy-container">
       <h1>African Climatic Vintage Policy on Environmental Sustainability and Advocacy</h1>
       
@@ -74,7 +76,11 @@ const Policy = () => {
         <h2>9. Contact</h2>
         <p>For more information about this policy or to provide feedback, please contact [Contact Information].</p>
       </section>
-    </div>
+      </div>
+      <Footer />
+      </>
+
+   
   );
 }
 
