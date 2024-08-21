@@ -1,24 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-.policy-container{
-    margin-top: 10%;
-    background-color: grey;
-    color: #000;
+
+.policy-container {
+    margin-top: 10%; /* Adjust margin to create space from the top of the page */
+    background-color: #f4f4f4; /* Changed to a lighter grey for better readability */
+    color: #333; /* Changed to a darker grey for better contrast */
     width: 100%;
+    padding: 20px; /* Added padding for better spacing */
+    box-sizing: border-box; /* Ensures padding is included in width calculation */
 }
+
 .policy-container h1 {
-    font-size: 2em;
+    font-size: 2.5em; /* Slightly larger font size for the main heading */
     text-decoration: underline;
     color: #000;
     text-align: center;
     font-family: "Merriweather", serif;
     font-weight: 400;
-    font-style: normal; 
+    margin-bottom: 20px; /* Added margin to separate from the next section */
 }
-.policy-section h2{
+
+.policy-section {
+    margin: 20px auto; /* Center align sections and add space around them */
+    max-width: 900px; /* Limit width for better readability */
+    padding: 10px; /* Add padding for better spacing */
+}
+
+.policy-section h2 {
     color: #000;
-    font-size: 18px;
+    font-size: 1.5em; /* Adjust font size for subheadings */
     font-family: "Merriweather", serif;
     font-weight: 700;
-    margin-top: 2%;
+    margin-top: 20px; /* Increased margin for better spacing */
+    margin-bottom: 10px; /* Added margin for separation from content */
+}
 
+.policy-section li {
+    color: #333; /* Darker grey for list items */
+    font-size: 1em; /* Adjusted font size for list items */
+    font-family: "Merriweather", serif;
+    font-weight: 400; /* Normal weight for readability */
+    margin-top: 10px; /* Adjusted spacing between list items */
+    line-height: 1.6; /* Improved line-height for readability */
 }
