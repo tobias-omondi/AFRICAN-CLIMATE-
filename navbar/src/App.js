@@ -8,6 +8,7 @@ import Podcast from './components/Podcast';
 import Contact from './components/Contact';
 import Advocacy from './components/Advocacy';
 import Multimedia from './components/Multimedia';
+import Policy from './components/Policy';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path='/news' element ={<News/>}/>
         <Route path='/multimedia' element ={<Multimedia/>}/>
         <Route path='/advocacy' element ={<Advocacy/>}/>
+        <Route path='/advocacy/policy' element ={<Policy/>}/>
         <Route path='/podcast' element ={<Podcast/>}/>
         <Route path='/contact' element ={<Contact/>}/>
       </Routes>
