@@ -10,12 +10,14 @@ import Advocacy from './components/Advocacy/Advocacy';
 import Multimedia from './components/Media/Multimedia';
 import Policy from './components/Advocacy/Policy';
 import SuccessStories from './components/Advocacy/SuccessStories';
+import ScrollToTop from './components/Scroll/ScrollToTop';
 
 
 function App() {
   return (
     <div className="App">
       <Router >
+        <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path='/' element ={<Home />}/>
