@@ -2,7 +2,6 @@
 
 .policy-container {
     margin-top: 10%; /* Reduced margin for smaller screens */
-    /* background-color: #f4f4f4; */
     color: #333;
     width: 90%; /* Adjusted width for smaller screens */
     padding: 20px;
@@ -46,9 +45,29 @@
 }
 
 /* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    .policy-container {
+        padding: 15px; /* Adjusted padding for large tablets */
+        margin-top: 20%; /* Adjusted margin for larger tablets */
+    }
+
+    .policy-container h1 {
+        font-size: 1.9em; /* Adjusted font size for large tablets */
+    }
+
+    .policy-section h2 {
+        font-size: 1.2em; /* Adjusted font size for large tablets */
+    }
+
+    .policy-section li {
+        font-size: 0.9em; /* Font size adjustment for large tablets */
+    }
+}
+
 @media (max-width: 768px) {
     .policy-container {
         padding: 15px; /* Reduced padding for smaller screens */
+        margin-top: 25%;
     }
 
     .policy-container h1 {
@@ -67,6 +86,7 @@
 @media (max-width: 480px) {
     .policy-container {
         padding: 10px; /* Further reduced padding */
+        margin-top: 30%;
     }
 
     .policy-container h1 {
