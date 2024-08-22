@@ -27,10 +27,9 @@ const CurrentCampain = () => {
       <div className='our_current_work_one'>
         <div>
         <img src={currentCampainimgtwo} alt='animals' />
-        
         </div>
         <div>
-        <h4>Restoring Hope Through Environmental Action</h4>
+        <h3>Restoring Hope Through Environmental Action</h3>
         <p>African Climatic Vintage's current campaign is focused on empowering communities to take meaningful steps toward environmental restoration. By engaging in reforestation, sustainable farming, and conservation efforts, we are not just combating climate change but also revitalizing the land and livelihoods of those most affected.</p>
         </div>
       </div>
