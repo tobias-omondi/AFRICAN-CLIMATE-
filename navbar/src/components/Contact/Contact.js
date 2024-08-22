@@ -28,6 +28,11 @@ const Contact = () => {
         icon: "success"
       });
     } else {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong!",
+      });
       console.log("Error", data);
       setResult(data.message);
     }
@@ -43,6 +48,8 @@ const Contact = () => {
         loop
         className="video-background"
       />
+          <h2 className='contact-heading'>CONTACT US</h2><br/>
+          <p className='contact-heading-paragraph'>Welcome to the African Climatic Vintage contact page. Whether you have questions, suggestions, or just want to connect, we are here to help. Fill out the form below, and our team will get back to you as soon as possible. Your feedback and inquiries are important to us!</p>
      </div>
      <section className='contact-form'>
       <form onSubmit={onSubmit}>
