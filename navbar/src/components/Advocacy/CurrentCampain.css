@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.CurrentCampain_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    overflow: hidden;
+    font-family: "Merriweather", serif;
+    font-weight: 500;
+    font-style: normal;
+    background-image: url('https://aacj.africa/wp-content/uploads/2023/12/IMGC7631-Enhanced-NR.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto; 
+    position: relative;
+    color: #000; 
+    object-fit: cover;
+    margin-top: 10%;
+}
+
+.CurrentCampain_page:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(42, 47, 95, 0.5);
+    z-index: 1;
+}
+
+.CurrentCampain_page > * {
+    position: relative;
+    z-index: 2;
+}
+.CurrentCampain_page_headings{
+    width: 100%;
+    max-width: 500px;
+    text-align: end;
+    margin-left: auto;
+    margin-right: 0.2em;
+    padding: 10px 20px;
+    margin-bottom: -20%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(0, 0, 0, 0.3);
+    filter: grayscale(90%);
+    font-size: 1.3em;
+    font-style: normal; 
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.CurrentCampain_page_headings h2{
+    font-size: 2em;
+    text-decoration: underline;
+    color: #fff;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal; 
+}  
+  .our_current_work,
+  .our_current_work_one{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .our_current_work img,
+  .our_current_work_one img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .our_current_work div,
+  .our_current_work_one div {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .our_current_work div {
+    margin-right: 20px;
+  }
+  
+  .our_current_work_one div {
+    margin-left: 20px;
+  }
+  
+  .main_current_work_two {
+    text-align: center;
+  }
+  
+  .main_current_work_two h3 {
+    font-size: 22px;
+    margin: 0;
+  }
+  
+  .main_current_work_two p {
+    font-size: 16px;
+  }
+  

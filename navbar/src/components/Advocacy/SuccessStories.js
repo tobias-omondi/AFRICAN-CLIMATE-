@@ -53,8 +53,8 @@ const SuccessStories = () => {
           <div>
             <img src={Successone} alt='food' />
             <div className='slide-text'>
-              <h4>Empowering Communities Through Food Security Initiatives</h4>
-              <p>In response to the growing challenges of climate change in Africa, African Climatic Vintage is committed to ensuring food security for vulnerable communities. By distributing nutritious, climate-resilient crops, we provide immediate relief while promoting sustainable agricultural practices. These efforts not only address hunger but also empower communities to adapt to environmental changes, fostering resilience and hope for a sustainable future.</p>
+               <h4>Empowering Communities Through Food Security Initiatives</h4>
+               <p>In response to climate challenges in Africa, African Climatic Vintage ensures food security by distributing nutritious, climate-resilient crops. This not only addresses hunger but also empowers communities to adapt and build resilience for a sustainable future.</p>
             </div>
           </div>
           <div>

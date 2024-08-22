@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 * {
     padding: 0;
@@ -44,21 +45,23 @@
     z-index: 2;
 }
 .success_stories_headings {
-    background-color: #f3f3f3;
     width: 100%;
-    max-width: 600px;
+    max-width: 900px;
     text-align: end;
     margin-left: auto;
     margin-right: 2em;
     padding: 10px 20px;
     margin-bottom: 2%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(0, 0, 0, 0.3);
+    filter: grayscale(90%);
+    font-size: 1.3em;
 }
 
 .success_stories_headings h1 {
     font-size: 2em;
     text-decoration: underline;
-    color: #000;
+    color: #fff;
     text-align: center;
     font-family: "Merriweather", serif;
     font-weight: 700;
@@ -66,7 +69,7 @@
 }
 
 .success_stories_headings p {
-    color: #000;
+    color: #fff;
     text-align: center;
     font-family: "Merriweather", serif;
     font-weight: 300;
@@ -80,7 +83,7 @@
     max-width: 1200px; 
     position: relative; 
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 60px 0;
     z-index: 3; 
 }
 
@@ -101,7 +104,7 @@
     padding: 20px;
     margin: 20px auto;
     text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
     margin-top: 7%;
 }
 
@@ -109,10 +112,55 @@
     font-size: 1.5em;
     color: #333;
     margin-bottom: 10px;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    padding: 10px;
+    text-decoration: underline;
 }
 
 .main_content p {
     font-size: 18px;
     color: #555;
     line-height: 1.6;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
 }
+
+.slide-text p{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    line-height: 1.7;margin-top: 5%;
+    text-align: center;
+    flex-grow: 1; 
+    margin-bottom: 10px;
+}
+.slide-text h4 {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: underline;
+    text-align: center;
+    padding: 10px 0px;
+    margin-bottom: 10px; 
+
+}
+.slide-text {
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+    height: 300px; /* Set a fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute the space between heading and paragraph */
+    padding: 15px; /* Optional padding for inner content */
+}
+
+

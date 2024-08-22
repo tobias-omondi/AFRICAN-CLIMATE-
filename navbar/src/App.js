@@ -11,6 +11,7 @@ import Multimedia from './components/Media/Multimedia';
 import Policy from './components/Advocacy/Policy';
 import SuccessStories from './components/Advocacy/SuccessStories';
 import ScrollToTop from './components/Scroll/ScrollToTop';
+import CurrentCampain from './components/Advocacy/CurrentCampain';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path='/advocacy' element ={<Advocacy/>}/>
         <Route path='/advocacy/policy' element ={<Policy/>}/>
         <Route path='/advocacy/success' element ={<SuccessStories/>}/>
+        <Route path='/advocacy/current' element ={<CurrentCampain/>}/>
         <Route path='/podcast' element ={<Podcast/>}/>
         <Route path='/contact' element ={<Contact/>}/>
       </Routes>
