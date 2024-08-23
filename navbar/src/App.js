@@ -13,6 +13,9 @@ import SuccessStories from './components/Advocacy/SuccessStories';
 import ScrollToTop from './components/Scroll/ScrollToTop';
 import CurrentCampain from './components/Advocacy/CurrentCampain';
 import NewsLatter from './components/Contact/NewsLatter';
+import PanelDiscusion from './components/Multimedia/PanelDiscusion';
+import Investigative from './components/News/Investigative';
+import Community_Spotlight from './components/News/Community_Spotlight';
 
 
 function App() {
@@ -25,7 +28,10 @@ function App() {
         <Route path='/' element ={<Home />}/>
         <Route path='/about' element ={<About/>}/>
         <Route path='/news' element ={<News/>}/>
+        <Route path= '/news/investigative' element ={<Investigative/>}/>
+        <Route path= 'Community Spotlight' element ={<Community_Spotlight/>}/>
         <Route path='/multimedia' element ={<Multimedia/>}/>
+        <Route path='/multimedia/panel-discussion' element ={<PanelDiscusion/>}/>
         <Route path='/advocacy' element ={<Advocacy/>}/>
         <Route path='/advocacy/policy' element ={<Policy/>}/>
         <Route path='/advocacy/success' element ={<SuccessStories/>}/>
