@@ -39,7 +39,6 @@ function App() {
         <Route path='/podcast' element ={<Podcast/>}/>
         <Route path='/contact' element ={<Contact/>}/>
         <Route path='/contact/newsletter' element ={<NewsLatter/>}/>
-
       </Routes>
       </Router>
     </div>
