@@ -43,8 +43,6 @@ const Navbar = () => {
 
   const dropdownItems = {
     news: [
-      { label: 'Top Stories', path: '/news/top-stories' },
-      { label: 'Climatic Voice', path: '/news/climatic-voice' },
       { label: 'Investigative', path: '/news/investigative' },
       { label: 'Community Spotlight', path: '/news/community-spotlight' },
     ],
@@ -54,9 +52,7 @@ const Navbar = () => {
       { label: 'Policy', path: '/advocacy/policy' },
     ],
     multimedia: [
-      { label: 'Documentaries', path: '/multimedia/documentaries' },
       { label: 'Panel Discussion', path: '/multimedia/panel-discussion' },
-      { label: 'Podcast', path: '/multimedia/podcast' },
       { label: 'Interview', path: '/multimedia/interview' },
     ],
     contact: [
