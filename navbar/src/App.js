@@ -12,6 +12,7 @@ import Policy from './components/Advocacy/Policy';
 import SuccessStories from './components/Advocacy/SuccessStories';
 import ScrollToTop from './components/Scroll/ScrollToTop';
 import CurrentCampain from './components/Advocacy/CurrentCampain';
+import NewsLatter from './components/Contact/NewsLatter';
 
 
 function App() {
@@ -31,6 +32,8 @@ function App() {
         <Route path='/advocacy/current' element ={<CurrentCampain/>}/>
         <Route path='/podcast' element ={<Podcast/>}/>
         <Route path='/contact' element ={<Contact/>}/>
+        <Route path='/contact/newsletter' element ={<NewsLatter/>}/>
+
       </Routes>
       </Router>
     </div>
