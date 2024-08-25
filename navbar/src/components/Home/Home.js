@@ -54,7 +54,7 @@ const Home = () => {
         alignItems: 'center',
         justifyContent: 'center',
         minHeight: '500px',
-      }} data-aos="fade-up" data-aos-delay="400">
+      }} data-aos="fade-up" data-aos-delay="100">
         <iframe 
           width="560" 
           height="315" 
