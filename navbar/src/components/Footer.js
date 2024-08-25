@@ -65,7 +65,7 @@ const Footer = () => {
 
         <div className='subscribe'>
             <h2>SUBSCRIBE NOW.</h2>
-            <input type='EMAIL' name='email' placeholder='EMAIL'/>
+            <input type='EMAIL' name='email' placeholder='EMAIL' className='field' required/>
             <button type='submit'  >SUBMIT</button>
         </div>
         </div>

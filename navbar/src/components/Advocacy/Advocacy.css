@@ -60,7 +60,6 @@
     margin-right: 2em;
 }
 .advocacy_headings{
-    background-color: #fff;
     width: 100%;
     max-width: 500px;
     text-align: end;
@@ -74,15 +73,15 @@
 .advocacy_headings h3{
     font-size: 2em;
     text-decoration: underline;
-    color: #000;
+    color: #fff;
     text-align: center;
     font-family: "Merriweather", serif;
     font-weight: 700;
     font-style: normal;   
 }
 .advocacy_headings p {
-    color: #000;
-    font-size: 18px;
+    color: #fff;
+    font-size: 20px;
     text-align: center;
     font-family: "Merriweather", serif;
     font-weight: 300;
