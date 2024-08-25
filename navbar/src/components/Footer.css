@@ -70,8 +70,8 @@
 .aboutlinks a,
 .legal a {
     text-decoration: none; 
-    color: #057c54; 
-    margin: 5px 0; 
+    color: #f2f2f2; 
+    margin: 12px 0; 
     transition: color 0.3s ease; 
     font-size: 1rem; 
     font-weight: 400;
@@ -79,7 +79,7 @@
 
 .services a:hover,
 .aboutlinks a:hover {
-    color: #029d8e; 
+    color: #057c54; 
 }
 .subscribe h2{
     color: #b0bad1;
@@ -88,6 +88,7 @@
     text-decoration: underline;
     margin-bottom: 10px; 
     font-size: 1.5rem; 
+    display: flex;
 }
 .subscribe .field{
     width: 100%;
@@ -111,4 +112,17 @@
     cursor: pointer;
     width: 100%;
     font-size: 1.5em;
+    border-radius: 20px;
+}
+.subscribe button:hover{
+    background-color: rgb(167, 119, 30);
+}
+.copyright p{
+    text-align: center;
+    color: #f2f2f2;
+    padding: 15px;
+    font-family: "Playfair Display", serif; 
+     font-weight: 400;
+     font-size: 20px;
+     text-decoration: underline;
 }

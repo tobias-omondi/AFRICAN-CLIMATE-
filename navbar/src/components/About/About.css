@@ -95,7 +95,7 @@
     margin-right: 20px;
 }
 .organisation_{
-    background-color: rgb(221, 216, 216);
+    background-color: rgba(3, 66, 68, 0.5); 
     text-align: center;
     font-family: "Merriweather", serif;
     font-weight: 500;
@@ -135,6 +135,7 @@
 }
 .success_icons{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #fff;
 }
 .success_icons:hover{
     background-color: dodgerblue;

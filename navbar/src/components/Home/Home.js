@@ -35,7 +35,7 @@ const Home = () => {
 
       {/* Section Images */}
       <div className='section-img-container'>
-        <img src={section1} alt="Section 1" className='section1-img' data-aos="fade-up" />
+        <img src={section1} alt="Section 1" className='section1-img' data-aos="fade-up" data-aos-delay="200" />
           {/* Paragraph Section */}
       <div className='section-pagrh' data-aos="fade-up" data-aos-delay="200">
         <h1>INTRODUCTION.</h1>
@@ -69,7 +69,7 @@ const Home = () => {
 
       {/* Features Section */}
       <div className='section3_img'>
-        <img src={background_section} alt="Background Section" data-aos="fade-up" data-aos-delay="300" />
+        <img src={background_section} alt="Background Section" data-aos="fade-up" data-aos-delay="100" />
         <div className='our_features'>
           <img src={section3} alt="Section 3" data-aos="zoom-in" data-aos-delay="200" />
           <img src={section4} alt="Section 4" data-aos="zoom-in" data-aos-delay="200" />
@@ -85,6 +85,10 @@ const Home = () => {
         justifyContent: 'center',
         mixBlendMode:'color-burn'
       }} data-aos="fade-up" data-aos-delay="300">
+         <div className='Africa_paragraph'>
+          <h2>A Tapestry of Climate Diversity</h2>
+          <p>Africa stands as a testament to the grandeur of climatic diversity, where the age-old landscapes meet the dynamic forces of nature, creating a mosaic of the world’s most striking climate patterns. From the vast, sun-baked deserts of the Sahara to the vibrant, verdant expanses of the Congo Basin, Africa’s climate is a rich tapestry that not only defines its ecological landscapes but also sustains the myriad life forms that flourish within its borders. At African Climatic Vintage, we delve into this remarkable climatic heritage, unveiling the profound ways in which Africa's diverse environments shape and inspire global understanding and appreciation.</p>
+        </div>
         <img src={Africa} alt='Africa Climate' />
       </div>
 

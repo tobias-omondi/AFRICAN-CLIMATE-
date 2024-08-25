@@ -83,7 +83,6 @@
 .section-pagrh h1 {
     font-size: 2em;
     text-decoration: underline;
-    color: blue;
     text-align: center;
     font-family: "Merriweather", serif;
     font-weight: 200;
@@ -131,6 +130,46 @@
 }
 .Africa{
     mix-blend-mode: color-burn;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+.Africa img {
+    width: 100%;
+    max-width: 550px;
+}
+.Africa_paragraph{
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+    margin-top: 7%;
+}
+.Africa h2{
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    padding: 10px;
+    text-decoration: underline;
+}
+.Africa p{
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      width: 100%;
+      max-width: 700px;
 }
 
 

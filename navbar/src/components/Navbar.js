@@ -8,7 +8,6 @@ const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState({
     news: false,
     advocacy: false,
-    contact: false,
   });
 
   const toggleMenu = () => {
@@ -20,8 +19,6 @@ const Navbar = () => {
     setDropdownOpen({
       news: false,
       advocacy: false,
-      contact: false,
-      multimedia:false
     });
   };
 
@@ -36,27 +33,21 @@ const Navbar = () => {
     { label: 'HOME', path: '/' },
     { label: 'ABOUT', path: '/about' },
     { label: 'NEWS', path: '/news', hasDropdown: true, dropdownKey: 'news' },
-    { label: 'MULTIMEDIA', path: '/multimedia', hasDropdown: true, dropdownKey: 'multimedia' },
     { label: 'ADVOCACY', path: '/advocacy', hasDropdown: true, dropdownKey: 'advocacy' },
-    { label: 'CONTACT', path: '/contact', hasDropdown: true, dropdownKey: 'contact' },
+    { label: 'CONTACT', path: '/contact' },
   ];
 
   const dropdownItems = {
     news: [
-      { label: 'Investigative', path: '/news/investigative' },
       { label: 'Community Spotlight', path: '/news/community-spotlight' },
+      { label: 'Multimedia', path: '/multimedia' },
+      { label: 'Panel Discussion', path: '/multimedia/panel-discussion' },
+      { label: 'Interview', path: '/multimedia/interview' },
     ],
     advocacy: [
       { label: 'Current Campaigns', path: '/advocacy/current' },
       { label: 'Success Stories', path: '/advocacy/success' },
       { label: 'Policy', path: '/advocacy/policy' },
-    ],
-    multimedia: [
-      { label: 'Panel Discussion', path: '/multimedia/panel-discussion' },
-      { label: 'Interview', path: '/multimedia/interview' },
-    ],
-    contact: [
-      { label: 'Newsletter Sign-up', path: '/contact/newsletter' },
     ],
   };
 

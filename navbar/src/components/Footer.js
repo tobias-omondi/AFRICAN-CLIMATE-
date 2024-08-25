@@ -17,6 +17,9 @@ const Footer = () => {
         });
       }, []);
 
+
+    const currentYear = new Date().getFullYear();
+
   return (
     <div className='footer'>
         <div className='footer_line_one'>
@@ -68,6 +71,9 @@ const Footer = () => {
             <input type='EMAIL' name='email' placeholder='EMAIL' className='field' required/>
             <button type='submit'  >SUBMIT</button>
         </div>
+        </div>
+        <div className='copyright'>
+                <p>&copy; {currentYear} African Climatic Vintage. All rights reserved.</p>
         </div>
     </div>
   );
