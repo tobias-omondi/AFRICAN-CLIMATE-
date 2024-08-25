@@ -101,7 +101,8 @@
 }
 
 .services a:hover,
-.aboutlinks a:hover {
+.aboutlinks a:hover,
+.legal a:hover {
     color: #057c54; 
 }
 .subscribe h2{
