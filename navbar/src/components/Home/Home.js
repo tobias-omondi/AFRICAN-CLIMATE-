@@ -1,15 +1,13 @@
 import React, { useEffect } from 'react';
 import './Home.css';
 import section1 from '../ASSET/Rich nations pledge funds at climate crisis summit.jpeg';
-import section3 from '../ASSET/floods.jpeg';
-import section4 from '../ASSET/plantingtrees.jpeg';
-import section5 from '../ASSET/drought.jpg';
 import background_section from '../ASSET/sun-savanna-African-Kenya-country.webp';
 import Africa from '../ASSET/Download Detailed Map of Africa Continent in Black Silhouette for free.jpeg';
 import Footer from '../Footer';
 import { Button } from 'react-scroll';
 import AOS from 'aos';
 import 'aos/dist/aos.css';  // Make sure this line is present to include AOS CSS
+import SliderImages from './SliderImages';
 
 const Home = () => {
 
@@ -70,16 +68,15 @@ const Home = () => {
       {/* Features Section */}
       <div className='section3_img'>
         <img src={background_section} alt="Background Section" data-aos="fade-up" data-aos-delay="100" />
-        <div className='our_features'>
-          <img src={section3} alt="Section 3" data-aos="zoom-in" data-aos-delay="200" />
-          <img src={section4} alt="Section 4" data-aos="zoom-in" data-aos-delay="200" />
-          <img src={section5} alt="Section 5" data-aos="zoom-in" data-aos-delay="200" />
-        </div>
+        <p>African Climatic Vintage is more than a study of weather patterns; it is an exploration of how climate shapes and is shaped by the continent’s rich natural and cultural landscapes. By understanding this intricate relationship, we gain valuable insights into the sustainability and resilience of Africa’s diverse environments and communities.</p>
+      </div>
+      <div>
+        <SliderImages />
       </div>
 
       {/* Africa Image Section */}
       <div className='Africa' style={{
-        marginTop: '20%', 
+        marginTop: '10%', 
         display: 'flex', 
         alignItems: 'center', 
         justifyContent: 'center',
