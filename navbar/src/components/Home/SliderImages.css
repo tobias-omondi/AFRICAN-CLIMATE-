@@ -1,65 +1,85 @@
-/* Ensure the slider container has a specific width and margin for proper alignment */
 .slider-container {
     width: 100%;
-    max-width: 1200px; /* Adjust based on your design needs */
-    margin: 0 auto; /* Center the slider horizontally */
-    position: relative; /* For positioning controls */
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
     margin-top: 5%;
 }
-.slider-container p {
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.slide p {
     font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-    line-height: 1.7;
-    margin-top: 5%;
-    flex-grow: 1; 
-    margin-bottom: 10px;
-    width: 100%;
+    line-height: 1.5;
     text-align: center;
+    margin: 10px 0;
     max-width: 380px;
+    height: 300px;
     box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
 }
 
-/* Style the images inside the slider */
-.slider-container img {
-    width: calc(100% - 10px); 
-    max-width: 700px;
+.slide img {
+    width: 100%;
+    max-width: 500px;
     height: 300px;
-    object-fit: cover; /* Maintain aspect ratio */
-    display: block; /* Remove extra space below images */
-    margin: 0 10px; /* Add space between images (left and right) */
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
 }
 
-/* Style for slick arrows */
 .slick-arrow {
-    background-color: rgba(0, 0, 0, 0.5); 
-    color: rgb(0, 29, 90); /* Arrow color */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(0, 29, 90);
     z-index: 10;
-}
-.slick-arrow:hover {
-    background-color: rgba(22, 48, 194, 0.5); /* Semi-transparent background */
-  
+    border-radius: 50%;
 }
 
-/* Style for the slick dots (pagination) */
+.slick-arrow:hover {
+    background-color: rgba(22, 48, 194, 0.5);
+}
 
 .slick-dots li {
-    margin: 0 5px; /* Space between dots */
+    margin: 0 5px;
 }
 
 .slick-dots li button:before {
-    color: black; 
+    color: black;
 }
 
 .slick-dots li.slick-active button:before {
-    color: #0a0d91; /* Active dot color */
+    color: #0a0d91;
 }
-/* Optional: Style the slider container to be responsive */
-@media (max-width: 768px) {
+
+@media (min-width: 768px) and (max-width: 992px) {
     .slider-container {
-        max-width: 100%; /* Full width on smaller screens */
+        width: 100%;
+    }
+    .slick-arrow{
+        display: none !important;
+    }
+}
+@media(max-width: 480px){
+    .slide img {
+        width: 100%;
+        max-width: 330px;
+        height: 300px;
+    }   
+    .slick-arrow{
+        display: none !important;
+    }
+}
+@media(min-width: 992px) {
+    .slider-container {
+        max-width: 100%;
+    }
+    .slick-arrow{
+        display: none !important;
     }
 }

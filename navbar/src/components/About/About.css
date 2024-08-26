@@ -144,7 +144,7 @@
 .our_team h2 {
     text-align: center;
     text-decoration: underline;
-    color: rgb(50, 50, 196);
+    color: #000;
     font-family: "Merriweather", serif;
     font-weight: 700;
     font-style: normal;
@@ -233,8 +233,111 @@
     margin-left: 15px; 
     line-height: 2;
 }
-
-
+@media (max-width: 480px){
+    .about_heading h3 {
+        font-size: 2em;
+        text-decoration: underline;
+        color: #000;
+    }
+    .about_heading p {
+        color: #fff;
+        font-size: 15px;
+        line-height: 1.4;
+    }
+    .mission_heading{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+    }
+    .about_pargraph h2{
+        font-size: 1.5em;
+        color: #000;
+        margin-top: 5%;
+    }
+    .about_pargraph p{
+        width: 100%;
+        max-width: 320px;
+        line-height: 1.5;
+        font-family: "Merriweather", serif;
+        font-weight: 200;
+        font-style: normal;
+        margin-left: 15px;
+    }
+    .about_img img {
+        max-width: 300px;
+        margin-right: 0px;
+        margin-top: 10%;
+    }
+    .organisation_unique {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .success_icons img {
+        max-width: 90px;
+    }
+    .success_icons{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        background-color: #fffdfd;
+    }
+    .our_team h2 {
+        text-align: center;
+        text-decoration: underline;
+        font-family: "Merriweather", serif;
+        font-weight: 700;
+        font-style: normal;
+        margin-top: 10%;
+    }
+    .our_team p{
+        color: #000;
+        font-size: 18px;
+        text-align: center;
+        font-family: "Merriweather", serif;
+        font-weight: 200;
+        line-height: 1.3;
+        margin: 0 auto; 
+        width: 100%; 
+        max-width: 350px;
+    } 
+    .team_members img {
+        width: 100%;
+        max-width: 150px; 
+        max-height: 300px;
+        height: auto; 
+        object-fit: cover;
+        padding: 20px; 
+    }
+    
+    .team_members h3 {
+        font-size: 1.05rem;
+        margin: 10px 0;
+        color: #333;
+        font-family: "Merriweather", serif;
+        font-weight: 700;
+        font-style: normal; 
+    }
+    
+    .team_members p {
+        font-size: 0.875rem;
+        color: #666; 
+        text-align: center;
+        max-width: 300px; 
+        margin: 0;
+    }
+    .our_vision  {
+        width: 100%;
+        max-width: 330px;
+        font-family: "Merriweather", serif;
+        font-weight: 200;
+        font-style: normal;
+        margin-left: 15px; 
+        line-height: 2;
+    }
+}
 
 
 

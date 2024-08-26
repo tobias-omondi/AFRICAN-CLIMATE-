@@ -13,11 +13,11 @@ import section7 from '../ASSET/24 hours in pictures.jpeg';
 
 // Define the images and corresponding paragraphs
 const slides = [
-  { img: section5, text: "Drought in Africa: Severe water shortages and impact on agriculture." },
-  { img: section6, text: "Flooding Events: The impact of heavy rainfall on communities." },
-  { img: section7, text: "24 Hours in Pictures: A glimpse into daily life amid climatic challenges." },
-  { img: section8, text: "Climate Crisis Summit: Global efforts to address climate issues." },
-  { img: section9, text: "Planting Trees: Efforts to combat climate change through reforestation." },
+  { img: section5, text: "Drought in Africa causes severe water shortages that cripple agriculture, leading to poor crop yields and food insecurity. It also impacts livestock, further harming rural economies. Communities often face health risks from using distant, unsafe water sources. Addressing the crisis involves better water management, drought-resistant crops, and improved irrigation infrastructure." },
+  { img: section6, text: "Heavy rainfall and flooding can devastate communities by damaging homes, infrastructure, and farmland. The deluge often leads to displacement, increased health risks from waterborne diseases, and disruption of essential services. Recovery is hindered by the destruction of resources and economic instability, underscoring the need for effective flood management and disaster preparedness." },
+  { img: section7, text: "24 Hours in Pictures: offers a snapshot of daily life faced with climatic challenges, showcasing how individuals and communities navigate severe weather events and environmental shifts. It highlights the resilience and adaptability required to cope with issues like flooding, drought, and extreme temperatures, capturing moments of struggle, ingenuity, and hope as people respond to the impacts of climate change in real time." },
+  { img: section8, text: "The Climate Crisis Summit brings together global leaders, scientists, and activists to address urgent climate issues through collaborative discussions and action plans. The summit focuses on reducing greenhouse gas emissions, advancing renewable energy, and implementing sustainable practices to combat climate change. It serves as a platform for sharing innovative solutions, committing to ambitious climate targets, and fostering international cooperation to mitigate the impact of the climate crisis." },
+  { img: section9, text: "Planting trees is a crucial effort to combat climate change through reforestation. Trees absorb carbon dioxide, help restore ecosystems, and prevent soil erosion, playing a key role in reducing global warming. Reforestation projects also support biodiversity, improve air and water quality, and provide economic benefits to local communities through sustainable forestry practices. These initiatives are vital for enhancing climate resilience and mitigating the effects of climate change." },
 ];
 
 const SliderImages = () => {

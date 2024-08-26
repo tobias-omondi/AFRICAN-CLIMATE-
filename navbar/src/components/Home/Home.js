@@ -27,15 +27,15 @@ const Home = () => {
       <div className='home_container' style={{ paddingTop: '64px' }}>
         <div className='landing-container'>
           <h2 data-aos="zoom-in">DELIVERING CLIMATIC<br /> TO AFRICAN CONTINENT.</h2>
-          <Button type='submit' data-aos="zoom-in" >Sign-Up</Button>
+          <Button type='submit' data-aos="zoom-in" >Newsletter-Signup</Button>
         </div>
       </div>
 
       {/* Section Images */}
-      <div className='section-img-container'>
-        <img src={section1} alt="Section 1" className='section1-img' data-aos="fade-up" data-aos-delay="200" />
+      <div className='section-img-container'  data-aos="fade-up" data-aos-delay="200">
+        <img src={section1} alt="Section 1" className='section1-img' />
           {/* Paragraph Section */}
-      <div className='section-pagrh' data-aos="fade-up" data-aos-delay="200">
+      <div className='section-pagrh'>
         <h1>INTRODUCTION.</h1>
         <p>
             Welcome to our platform, where we are committed to fostering collaboration and dialogue to drive sustainable 

@@ -1,32 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 .home_container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
+    min-height: 100vh;
     margin-top: 10%;
-    overflow: auto; 
+    overflow: auto;
     font-family: "Merriweather", serif;
     font-weight: 500;
-    font-style: normal;
     background-image: url('https://d3i6fh83elv35t.cloudfront.net/static/2022/05/GettyImages-1239632754-1024x632.jpg');
-    background-size: cover; 
-    background-position: center; 
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: auto; 
+    height: auto;
     position: relative;
-    color: white; 
-    object-fit: cover;
+    color: white;
 }
+
 .landing-container h2 {
-    z-index: 1; 
+    z-index: 1;
     margin-left: 3.5rem;
     padding: 20px;
     margin-top: 10%;
@@ -37,51 +38,58 @@
 }
 
 .landing-container button {
-    z-index: 1; 
+    z-index: 1;
     margin-top: 20px;
-    padding: 10px 20px; 
-    background-color: orange;
-    color: white; 
-    border: none; 
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    color: #000;
+    border: none;
     cursor: pointer;
     width: 100%;
     max-width: 250px;
     margin-left: 7rem;
-    font-size: 1.5em;
-
+    font-size: 1.2em;
+    border-radius: 30em;
+    font-family: "Merriweather", serif;
 }
-.section-img-container{
+
+.landing-container button:hover {
+    background-color: rgb(7, 64, 121);
+}
+
+.section-img-container {
     display: flex;
     align-items: center;
     justify-content: center;
     justify-content: space-between;
-    margin-top: 8%;
+    margin-top: 5%;
 }
+
 .section1-img {
     max-width: 550px;
-    margin-left: 2em;
+    margin: 0 2em;
 }
-.section-pagrh{
+
+.section-pagrh {
     width: 100%;
     max-width: 1200px;
-    margin-right: 2em;
-    padding: 10px 12px ;
+    margin: 0 2em;
+    padding: 10px 12px;
     font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
+    font-variation-settings: "wdth" 100;
 }
+
 .section-pagrh h1 {
     font-size: 2em;
     text-decoration: underline;
     text-align: center;
     font-family: "Merriweather", serif;
     font-weight: 300;
-    font-style: normal;
-    padding: 30px 0px;
+    padding: 30px 0;
 }
+
 .section-pagrh p {
     color: #000;
     font-size: 18px;
@@ -89,27 +97,27 @@
     font-family: "Merriweather", serif;
     font-weight: 400;
     line-height: 1.9;
-    margin: 0 auto; 
-    width: 100%; 
-    max-width: 1100px; 
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;
 }
+
 .section3_img {
-    min-height: 100vh; 
-    margin-top: 10%;
-    overflow: auto; 
+    min-height: 100vh;
+    margin-top: 2%;
+    overflow: auto;
     font-family: "Merriweather", serif;
     font-weight: 500;
-    font-style: normal;
     background-image: url('https://a-z-animals.com/media/2021/08/Zebras-1024x535.jpg');
-    background-size: cover; 
-    background-position: center; 
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: auto; 
+    height: auto;
     position: relative;
-    color: white; 
-    object-fit: cover;
+    color: white;
 }
+
 .section3_img p {
     position: absolute;
     top: 50%;
@@ -131,138 +139,410 @@
 
 .video-container iframe {
     width: 100%;
-    max-width: 700px; 
+    max-width: 700px;
     max-height: 500px;
-    border: none; 
+    border: none;
 }
-.Africa{
-    mix-blend-mode: color-burn;
+
+.Africa {
     display: flex;
-    justify-content: space-between;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin: 10% 0;
+    text-align: center;
 }
+
 .Africa img {
     width: 100%;
     max-width: 550px;
+    height: auto;
 }
-.Africa_paragraph{
-    background-color: rgba(255, 255, 255, 0.8); 
+
+.Africa_paragraph {
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     margin: 20px auto;
     text-align: center;
     box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
-    margin-top: 7%;
+    max-width: 700px;
 }
-.Africa h2{
+
+.Africa h2 {
     font-size: 1.5em;
     color: #333;
     margin-bottom: 10px;
     font-family: "Merriweather", serif;
     font-weight: 700;
-    font-style: normal;
     text-align: center;
     padding: 10px;
     text-decoration: underline;
 }
-.Africa p{
+
+.Africa p {
     font-size: 18px;
     color: #555;
     line-height: 1.6;
     font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-      width: 100%;
-      max-width: 700px;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 @media (max-width: 480px) {
     .home_container {
-        background-image: url('https://www.afro.who.int/sites/default/files/2023-05/SHUTTERSTOCK%20Credit%20-%20Vegetation%20contrast.jpg');
-        background-size: cover; 
-        background-position: center; 
+        background-image: url('https://www.fsdkenya.org/wp-content/uploads/2022/03/ClimateFinance.jpg');
+        background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
-        width: 100%;
-        height: auto; 
-        min-height: 50vh;
+        min-height: 75vh;
     }
+
     .landing-container h2 {
-        font-size: 2em; 
-        padding: 30px; 
+        font-size: 1.5em;
+        padding: 30px;
         margin-top: 50%;
+        width: 100%;
+        max-width: 350px;
+        margin-left: -.12rem;
     }
 
     .landing-container button {
         width: 100%;
         max-width: 200px;
-        font-size: 1em; 
-        padding: 8px; 
+        font-size: 1em;
+        padding: 8px;
+        margin-left: 1rem;
     }
-    .section-img-container{
+
+    .section-img-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2%;
     }
+
     .section1-img {
         margin-top: 10%;
+        max-width: 330px;
     }
-    .section1-img img{
-        max-width: 350px;
-        margin-left: 0em;
+
+    .section1-img img {
+        margin-left: 0;
         padding: 10px;
-    }   
-    .video-container iframe {
-        width: 100%; 
-        max-width: 350px;
-        height: auto; 
-        border: none;
-        margin-top: 35%; 
+        max-width: 330px;
     }
+
+    .video-container iframe {
+        width: 100%;
+        max-width: 330px;
+        height: auto;
+        border: none;
+        margin-top: -50%;
+    }
+
     .section2-img {
-        max-width: 320px;
+        max-width: 330px;
         mix-blend-mode: multiply;
         margin-top: 70%;
         padding: 40px;
     }
-    .section-pagrh{
-        width: 100%;
-        /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-        margin-left: 0em;
-        margin-top: -34em;
-        padding: 20px 10px 20px ;
+
+    .section-pagrh {
+        margin: 0;
+        padding: 20px 10px;
         font-family: "Open Sans", sans-serif;
-        font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
-        font-variation-settings:
-          "wdth" 100;
+        font-variation-settings: "wdth" 100;
     }
+
     .section-pagrh p {
-        width: 100%;
         font-size: 15px;
     }
-    .section3_img p {
-        font-size: 1.4em;
-        width: 100%; 
-        max-width: 800px; 
-        text-align: center;
-    }
-    .Africa{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .Africa p{
-          width: 100%;
-          max-width: 400px;
-    }
+
     .section3_img {
-        min-height: 60vh; 
+        min-height: 60vh;
+        margin-top: -55%;
     }
+
     .section3_img p {
         font-size: 1.2em;
         width: 100%;
         max-width: 350px;
         margin: 0;
+    }
+
+    .Africa {
+        margin: 5% 0;
+        flex-direction: column;
+    }
+
+    .Africa img {
+        max-width: 330px;
+    }
+
+    .Africa_paragraph {
+        max-width: 300px;
+    }
+
+    .Africa h2 {
+        font-size: 1.2em;
+    }
+
+    .Africa p {
+        font-size: 15px;
+    }
+}
+/* small tablets */
+@media (min-width: 768px) and (max-width: 992px) {
+    .home_container {
+        background-image: url('https://www.fsdkenya.org/wp-content/uploads/2022/03/ClimateFinance.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 60vh;
+    }
+
+    .landing-container h2 {
+        font-size: 1.5em;
+        padding: 30px;
+        margin-top: 30%;
+        width: 100%;
+        max-width: 550px;
+        margin-left: 2em;
+    }
+
+    .landing-container button {
+        width: 100%;
+        max-width: 200px;
+        font-size: 1em;
+        padding: 8px;
+        margin-left: 3.5rem;
+    }
+
+    .section-img-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2%;
+    }
+
+    .section1-img {
+        margin-top: 10%;
+        max-width: 600px;
+    }
+
+    .section1-img img {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .video-container iframe {
+        width: 100%;
+        max-width: 330px;
+        height: auto;
+        border: none;
+        margin-top: -50%;
+    }
+
+    .section2-img {
+        max-width: 330px;
+        mix-blend-mode: multiply;
+        margin-top: 70%;
+        padding: 40px;
+    }
+
+    .section-pagrh {
+        margin: 0;
+        padding: 20px 10px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        line-height: 1.7;
+    }
+
+    .section-pagrh p {
+        font-size: 15px;
+    }
+
+    .section3_img {
+        min-height: 60vh;
+    }
+
+    .video-container iframe {
+        margin-top: 5%;
+        height: 330px;
+        width: 100%;
+        max-width: 600px;
+        border: none;
+    }
+
+    .section3_img p {
+        font-size: 1.5em;
+        width: 100%;
+        max-width: 600px;
+        margin: 0;
+    }
+
+    .Africa {
+        margin: 5% 0;
+        flex-direction: column;
+    }
+
+    .Africa img {
+        max-width: 600px;
+    }
+
+    .Africa_paragraph {
+        max-width: 600px;
+    }
+
+    .Africa h2 {
+        font-size: 1.4em;
+    }
+
+    .Africa p {
+        font-size: 16px;
+    }
+}
+/* larger tablets */
+@media (min-width: 992px) {
+    .home_container {
+        background-image: url('https://www.fsdkenya.org/wp-content/uploads/2022/03/ClimateFinance.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        padding: 20px;
+    }
+
+    .landing-container h2 {
+        font-size: 2.5em;
+        padding: 40px;
+        margin-top: 10%;
+        width: 80%;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .landing-container button {
+        width: auto;
+        max-width: 300px;
+        font-size: 1.2em;
+        padding: 12px 24px;
+        margin-top: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-img-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 5%;
+    }
+
+    .section1-img {
+        max-width: 450px;
+        margin: 0 2em;
+    }
+
+    .section1-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .video-container iframe {
+        width: 100%;
+        max-width: 600px;
+        height: 300px;
+        border: none;
+        margin-top: 4%;
+    }
+
+    .section2-img {
+        max-width: 500px;
+        mix-blend-mode: multiply;
+        margin-top: 50px;
+        padding: 40px;
+    }
+
+    .section-pagrh {
+        margin: 0;
+        padding: 20px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        line-height: 1.7;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-pagrh p {
+        font-size: 18px;
+    }
+
+    .section3_img {
+        min-height: 70vh;
+        position: relative;
+    }
+
+    .section3_img p {
+        font-size: 1.6em;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .Africa {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 5% 0;
+        margin-left: 1.5em;
+    }
+
+    .Africa img {
+        max-width: 600px;
+        margin: 0 20px;
+    }
+
+    .Africa_paragraph {
+        max-width: 500px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+    }
+
+    .Africa h2 {
+        font-size: 2em;
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;
+        padding: 10px;
+        text-decoration: underline;
+    }
+
+    .Africa p {
+        font-size: 20px;
+        line-height: 1.4;
+        color: #555;
     }
 }
