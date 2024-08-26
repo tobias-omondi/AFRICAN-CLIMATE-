@@ -52,7 +52,7 @@ const Home = () => {
         alignItems: 'center',
         justifyContent: 'center',
         minHeight: '500px',
-      }} data-aos="fade-up" data-aos-delay="100">
+      }}>
         <iframe 
           width="560" 
           height="315" 
@@ -68,8 +68,9 @@ const Home = () => {
       {/* Features Section */}
       <div className='section3_img'>
         <img src={background_section} alt="Background Section" data-aos="fade-up" data-aos-delay="100" />
-        <p>African Climatic Vintage is more than a study of weather patterns; it is an exploration of how climate shapes and is shaped by the continent’s rich natural and cultural landscapes. By understanding this intricate relationship, we gain valuable insights into the sustainability and resilience of Africa’s diverse environments and communities.</p>
+        <p data-aos="zoom-in" data-aos-delay="300" >African Climatic Vintage is more than a study of weather patterns; it is an exploration of how climate shapes and is shaped by the continent’s rich natural and cultural landscapes. By understanding this intricate relationship, we gain valuable insights into the sustainability and resilience of Africa’s diverse environments and communities.</p>
       </div>
+
       <div>
         <SliderImages />
       </div>
