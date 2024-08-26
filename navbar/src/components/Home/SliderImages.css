@@ -4,7 +4,7 @@
     max-width: 1200px; /* Adjust based on your design needs */
     margin: 0 auto; /* Center the slider horizontally */
     position: relative; /* For positioning controls */
-    margin-top: 7%;
+    margin-top: 5%;
 }
 .slider-container p {
     font-family: "Open Sans", sans-serif;
