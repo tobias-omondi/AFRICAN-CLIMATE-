@@ -51,6 +51,12 @@ const Contact = () => {
           <h2 className='contact-heading'>CONTACT US</h2><br/>
           <p className='contact-heading-paragraph'>Welcome to the African Climatic Vintage contact page. Whether you have questions, suggestions, or just want to connect, we are here to help. Fill out the form below, and our team will get back to you as soon as possible. Your feedback and inquiries are important to us!</p>
      </div>
+    <div className='contact_information'>
+      <div className='information'>
+      <h2>Contact Us</h2>
+      <p>
+        At African Climatic Vintage, we are committed to fostering communication and collaboration to drive sustainable change across Africa. </p>
+      </div>
      <section className='contact-form'>
       <form onSubmit={onSubmit}>
       <h2>CONTACT FORM.</h2>
@@ -71,6 +77,7 @@ const Contact = () => {
      
 
      </section>
+     </div>
       <Footer />
       </>
   );

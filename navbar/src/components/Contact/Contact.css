@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -18,7 +19,32 @@
     position: relative;
     color: #fff; /* Adjust text color based on video contrast */
 }
-
+.contact_information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.information h2{
+    font-size: 3em;
+    text-decoration: underline;
+    color: #000;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.information p{
+    color: #000;
+    font-size: 18px;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    line-height: 1.9;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;
+}
 .video-background {
     position: absolute;
     top: 0;
@@ -63,6 +89,8 @@
     min-height: 80vh; /* Adjusted to fit within the page */
     padding: 20px;
     border-radius: 8px;
+    width: 100%;
+    max-width: 900px;
 }
 
 form {
