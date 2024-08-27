@@ -17,6 +17,7 @@
     width: 100%;
     position: relative;
     color: #fff; /* Adjust text color based on video contrast */
+    margin-top: 10%;
 }
 
 .video-background {
@@ -56,7 +57,7 @@
     margin-top: 20px; /* Added margin for spacing */
 }
 
-.contact-form {
+.contact-form_newsletter {
     display: flex;
     justify-content: center;
     align-items: center;
