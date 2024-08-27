@@ -166,7 +166,7 @@
       gap: 1rem;
       width: 100%;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      animation: slideRightFadeout 2s ease-in-out forwards;
+      animation: slideRightFadeout 1.3s ease-in-out forwards;
       border-radius: 0px 0px 20px 20px;
     }
     @keyframes slideRightFadeout {
