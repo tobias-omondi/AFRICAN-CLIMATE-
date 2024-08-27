@@ -46,7 +46,6 @@ const Navbar = () => {
     ],
     advocacy: [
       { label: 'Current Campaigns', path: '/advocacy/current' },
-      { label: 'Success Stories', path: '/advocacy/success' },
       { label: 'Policy', path: '/advocacy/policy' },
     ],
   };

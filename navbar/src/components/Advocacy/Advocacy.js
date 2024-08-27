@@ -3,6 +3,8 @@ import './Advocacy.css'
 import Footer from '../Footer'
 import Advocacyone from '../ASSET/flood.jpg'
 import Advocacytwo from '../ASSET/the-drought-has-destro.jpg'
+import CurrentCampain from './CurrentCampain'
+import SuccessStories from './SuccessStories'
 
 const Advocacy = () => {
   return (
@@ -37,6 +39,9 @@ const Advocacy = () => {
         <div className='Advocacy_empowering'>
           <h2>Empowering communities</h2>
           <p>Empowering communities is central to our advocacy efforts, as it involves equipping individuals with the knowledge, skills, and resources they need to drive meaningful change. By providing education and training, we help communities understand and address critical issues such as climate change and environmental sustainability. We support local initiatives, foster participation in decision-making processes, and build networks that amplify their voices. Our approach encourages the adoption of sustainable practices and innovative solutions, enhancing resilience and self-reliance. Celebrating their successes further inspires and motivates, demonstrating the profound impact of their contributions and paving the way for a more equitable and sustainable future.</p>
+        </div>
+        <div>
+          <SuccessStories />
         </div>
     <Footer />
     </>
