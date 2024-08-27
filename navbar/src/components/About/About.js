@@ -2,6 +2,9 @@ import React from 'react'
 import './About.css'
 import Aboutimg from '../ASSET/Sommet africain sur le climat _ le projet de déclaration finale sous le feu des critiques.jpeg'
 import missionicons from '../ASSET/missionicons.jpeg'
+import missioniconsONE from '../ASSET/images (1).png'
+import missioniconsTWO from '../ASSET/success-26.png'
+import missioniconsTHREE from '../ASSET/images.png'
 import team1 from '../ASSET/team1.jpeg'
 import team2 from '../ASSET/team2.jpeg'
 import team3 from '../ASSET/team3.jpeg'
@@ -45,15 +48,15 @@ const About = () => {
       <h5>OUR Success</h5>
       </div>
       <div  className='success_icons'>
-      <img src={missionicons} />
+      <img src={missioniconsONE} />
       <h5>OUR Mission</h5>
       </div>
       <div  className='success_icons'>
-      <img src={missionicons} />
+      <img src={missioniconsTWO} />
       <h5>OUR Vision</h5>
       </div>
       <div  className='success_icons'>
-      <img src={missionicons} />
+      <img src={missioniconsTHREE} />
       <h5>OUR Journey</h5>
       </div>
     </div>
