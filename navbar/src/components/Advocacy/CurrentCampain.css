@@ -16,7 +16,7 @@
     font-family: "Merriweather", serif;
     font-weight: 500;
     font-style: normal;
-    background-image: url('https://aacj.africa/wp-content/uploads/2023/12/IMGC7631-Enhanced-NR.jpg');
+    background-image: url('https://www.japantimes.co.jp/uploads/imported_images/uploads/2023/04/np_file_224353.jpeg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
@@ -49,7 +49,7 @@
     max-width: 500px;
     text-align: end;
     margin-left: auto;
-    margin-right: 0.2em;
+    margin-right: auto;
     padding: 10px 20px;
     margin-bottom: -20%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -61,7 +61,6 @@
 
 .CurrentCampain_page_headings h2 {
     font-size: 2em;
-    text-decoration: underline;
     color: #fff;
     text-align: center;
     font-family: "Merriweather", serif;
