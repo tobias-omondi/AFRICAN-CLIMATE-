@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
 * {
     padding: 0;
     margin: 0;
@@ -9,79 +8,34 @@
 .contact_page {
     display: flex;
     flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    min-height: 80vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflow to ensure clean edges */
+    font-family: "Merriweather", serif;
+    font-weight: 500;
+    font-style: normal;
+    width: 100%;
+    position: relative;
+    color: #fff; /* Adjust text color based on video contrast */
+}
+.contact_information{
+    display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
-    overflow: hidden;
-    font-family: "Merriweather", serif;
-    font-weight: 500;
-    font-style: normal;
-    width: 100%;
-    position: relative;
-    color: #fff;
-    background: url('https://res.cloudinary.com/djyfoquip/video/upload/v1724335392/Planet_Earth_Spinning_in_Space_-_4K_Video_pqmiv6.mp4') no-repeat center center;
-    background-size: cover;
+    justify-content: space-evenly;
 }
-
-.video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
-.contact-heading {
-    position: relative;
-    text-align: center;
-    color: #fff;
-    z-index: 1;
-    font-size: 3rem;
-    font-family: "Merriweather", serif;
-    font-weight: 500;
-    font-style: normal;
-    text-decoration: underline;
-    margin-top: 20px;
-}
-
-.contact-heading-paragraph {
-    position: relative;
-    text-align: center;
-    color: #fff;
-    z-index: 1;
-    font-size: 1.4rem;
-    font-family: "Merriweather", serif;
-    font-weight: 400;
-    font-style: normal;
-    width: 100%;
-    max-width: 800px;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.contact_information {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 100%;
-    padding: 20px;
-    gap: 20px; /* Add some space between the columns */
-}
-
-.information {
+.information{
     background-color: rgb(84, 84, 245);
-    height: auto;
+    height: 450px;
     width: 100%;
     max-width: 500px;
     text-align: center;
-    border-radius: 38px 24px 93px 49px;
-    padding: 20px;
+    justify-content: center;
+    margin-left: 1.5em;
+    border-radius: 38px 24px 93px 49px;-webkit-border-radius: 38px 24px 93px 49px;-moz-border-radius: 38px 24px 93px 49px;
 }
-
-.information_heading h3 {
+.information_heading h3{
     font-size: 1em;
     text-decoration: underline;
     color: #1d1c1c;
@@ -91,8 +45,7 @@
     font-style: normal;
     padding: 20px 10px;
 }
-
-.information h2 {
+.information h2{
     font-size: 2em;
     text-decoration: underline;
     color: #000;
@@ -100,10 +53,9 @@
     font-family: "Merriweather", serif;
     font-weight: 300;
     font-style: normal;
-    margin-top: 10%;
+    margin-top: 20%;
 }
-
-.information p {
+.information p{
     color: #1f1c1c;
     font-size: 18px;
     text-align: center;
@@ -114,16 +66,52 @@
     width: 100%;
     max-width: 1100px;
 }
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the whole container */
+    z-index: -1; /* Ensure the video is behind other content */
+}
+
+.contact-heading {
+    position: relative; /* Changed to relative for better positioning */
+    text-align: center;
+    color: #fff;
+    z-index: 1; 
+    font-size: 3rem; 
+    font-family: "Merriweather", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.contact-heading-paragraph {
+    position: relative; /* Changed to relative for better positioning */
+    text-align: center;
+    color: #fff;
+    z-index: 1; 
+    font-size: 1.4rem; /* Adjusted font size for better readability */
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    margin-top: 20px; /* Added margin for spacing */
+}
 
 .contact-form {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 80vh; /* Adjusted to fit within the page */
     padding: 20px;
     border-radius: 8px;
     width: 100%;
-    max-width: 700px;
+    max-width: 900px;
 }
 
 form {
@@ -185,88 +173,69 @@ form button {
 form button:hover {
     background-color: rgb(172, 125, 40);
 }
-
-/* Media Queries */
-@media (max-width: 1200px) {
-    .information {
-        max-width: 450px;
-    }
-
-    .contact-heading {
-        font-size: 2.5rem;
-    }
-
-    .contact-heading-paragraph {
-        font-size: 1.2rem;
-        max-width: 700px;
-    }
-}
-
-@media (max-width: 992px) {
-    .contact_information {
-        flex-direction: column;
+@media (max-width: 480px){
+    .contact_information{
+        display: flex;
+        flex-direction: column-reverse;
         align-items: center;
+        justify-content: space-evenly;
     }
-
-    .information {
-        max-width: 400px;
+    .information{
+        height: 450px;
+        width: 100%;
+        max-width: 330px;
+        margin-top: 10%;
+        margin-left: 0em;
     }
-
-    .contact-heading {
-        font-size: 2rem;
+    .contact_page p {
+        position: relative; /* Changed to relative for better positioning */
+        text-align: center;
+        color: #fff;
+        z-index: 1; 
+        font-size: 1rem; /* Adjusted font size for better readability */
+        font-family: "Merriweather", serif;
+        font-weight: 400;
+        font-style: normal;
+        width: 100%;
+        max-width: 800px;
+        padding: 20px;
+        margin-top: 20px; /* Added margin for spacing */
     }
-
-    .contact-heading-paragraph {
-        font-size: 1.1rem;
-        max-width: 600px;
+    .contact_information{
+        width: 100%;
     }
+    
 }
-
-@media (max-width: 768px) {
-    .contact_information {
-        padding: 10px;
+@media (max-width: 768px){
+    .contact_information{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
     }
-
-    .information {
-        max-width: 90%;
+    .information{
+        height: 450px;
+        width: 100%;
+        max-width: 330px;
+        margin-top: 10%;
+        margin-left: 0em;
     }
-
-    .contact-heading {
-        font-size: 1.8rem;
+    .contact_page p {
+        position: relative; /* Changed to relative for better positioning */
+        text-align: center;
+        color: #fff;
+        z-index: 1; 
+        font-size: 1rem; /* Adjusted font size for better readability */
+        font-family: "Merriweather", serif;
+        font-weight: 400;
+        font-style: normal;
+        width: 100%;
+        max-width: 800px;
+        padding: 20px;
+        margin-top: 20px; /* Added margin for spacing */
     }
-
-    .contact-heading-paragraph {
-        font-size: 1rem;
-        max-width: 500px;
+    .contact_information{
+        width: 100%;
     }
-
-    .contact-form {
-        padding: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .information {
-        max-width: 90%;
-        margin-left: 0;
-    }
-
-    .contact-heading {
-        font-size: 1.5rem;
-    }
-
-    .contact-heading-paragraph {
-        font-size: 0.9rem;
-        max-width: 400px;
-    }
-
-    .input_box .field {
-        height: 40px;
-        padding: 10px;
-    }
-
-    form button {
-        height: 45px;
-        font-size: 0.9rem;
-    }
+    
 }

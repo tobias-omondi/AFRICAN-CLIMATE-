@@ -35,7 +35,7 @@ const Advocacy = () => {
        We empower communities with the knowledge, tools, and support needed to advocate for sustainable practices and policies. 
        Through strategic campaigns, grassroots mobilization, and partnerships, we strive to amplify the voices of those
         most affected by climate change and work towards a future where every African can thrive in a safe, healthy, and resilient environment.</p></div>
-        <div className='Advocacy_harzard' data-aos="fade-up" data-aos-delay="200">>
+        <div className='Advocacy_harzard' data-aos="fade-up" data-aos-delay="200">
           <div className='Advocacy_harzard_life'>
             <img src={Advocacyone} alt='flood' />
             <h4>Environmental Damage </h4>
@@ -49,7 +49,7 @@ const Advocacy = () => {
           <p> Droughts lead to severe water shortages and reduced agricultural productivity, resulting in food insecurity and malnutrition. Communities dependent on agriculture for their livelihoods are particularly vulnerable.</p>
         </div>
         </div>
-        <div className='Advocacy_empowering' data-aos="fade-up" data-aos-delay="200">>
+        <div className='Advocacy_empowering' data-aos="fade-up" data-aos-delay="200">
           <h2>Empowering communities</h2>
           <p>Empowering communities is central to our advocacy efforts, as it involves equipping individuals with the knowledge, skills, and resources they need to drive meaningful change. By providing education and training, we help communities understand and address critical issues such as climate change and environmental sustainability. We support local initiatives, foster participation in decision-making processes, and build networks that amplify their voices. Our approach encourages the adoption of sustainable practices and innovative solutions, enhancing resilience and self-reliance. Celebrating their successes further inspires and motivates, demonstrating the profound impact of their contributions and paving the way for a more equitable and sustainable future.</p>
         </div>
