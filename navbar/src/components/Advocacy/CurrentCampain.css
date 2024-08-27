@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 * {
     padding: 0;
@@ -44,7 +43,8 @@
     position: relative;
     z-index: 2;
 }
-.CurrentCampain_page_headings{
+
+.CurrentCampain_page_headings {
     width: 100%;
     max-width: 500px;
     text-align: end;
@@ -57,9 +57,9 @@
     filter: grayscale(90%);
     font-size: 1.3em;
     font-style: normal; 
-    background-color: rgba(0, 0, 0, 0.3);
 }
-.CurrentCampain_page_headings h2{
+
+.CurrentCampain_page_headings h2 {
     font-size: 2em;
     text-decoration: underline;
     color: #fff;
@@ -67,39 +67,43 @@
     font-family: "Merriweather", serif;
     font-weight: 700;
     font-style: normal; 
-}  
-  .our_current_work,
-  .our_current_work_one{
+}
+
+.our_current_work,
+.our_current_work_one {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     margin: 20px 0;
     padding: 30px 0px;
     margin-top: 5%;
-  }
-  
-  .our_current_work img,
-  .our_current_work_one img {
+}
+
+.our_current_work img,
+.our_current_work_one img {
     max-width: 100%;
     height: auto;
-  }
-  
-  .our_current_work div,
-  .our_current_work_one div {
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.our_current_work div,
+.our_current_work_one div {
     flex: 1;
     padding: 10px;
-  }
-  
-  .our_current_work div {
+    text-align: center; /* Center text inside the div */
+}
+
+.our_current_work div {
     margin-right: 20px;
-  }
-  
-  .our_current_work_one div {
+}
+
+.our_current_work_one div {
     margin-left: 20px;
-  }
-  
-  .main_current_work_two {
+}
+
+.main_current_work_two {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.8); 
     width: 80%;
@@ -109,15 +113,16 @@
     text-align: center;
     box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
     margin-top: 7%;
-  }
-  
-  .main_current_work_two h3 {
+}
+
+.main_current_work_two h3 {
     font-size: 22px;
     margin: 0;
-  }
-  .our_current_work h3,
-  .our_current_work_one h3,
-  .main_current_work_two h3 {
+}
+
+.our_current_work h3,
+.our_current_work_one h3,
+.main_current_work_two h3 {
     font-size: 1.5em;
     color: #333;
     margin-bottom: 10px;
@@ -127,20 +132,91 @@
     text-align: center;
     padding: 10px;
     text-decoration: underline;
-  }
-  .our_current_work_one p,
-  .our_current_work p,
-  .main_current_work_two p {
+}
+
+.our_current_work_one p,
+.our_current_work p,
+.main_current_work_two p {
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-    line-height: 1.7;margin-top: 5%;
+    font-variation-settings: "wdth" 100;
+    line-height: 1.7;
+    margin-top: 5%;
     text-align: center;
     flex-grow: 1; 
     margin-bottom: 10px;
-  }
-  
+}
+
+/* Media queries for responsiveness */
+@media(max-width: 768px) {
+    .CurrentCampain_page_headings {
+        margin-right: 1em;
+        margin-left: 1em;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .CurrentCampain_page_headings h2 {
+        font-size: 1.5em;
+    }
+
+    .our_current_work,
+    .our_current_work_one {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our_current_work div,
+    .our_current_work_one div {
+        margin-right: 0;
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+    .our_current_work img,
+    .our_current_work_one img {
+        max-width: 90%;
+        margin: 0 auto; /* Center the image horizontally */
+    }
+
+    .main_current_work_two {
+        width: 90%;
+    }
+
+    .main_current_work_two h3 {
+        font-size: 1.3em;
+    }
+
+    .our_current_work h3,
+    .our_current_work_one h3,
+    .main_current_work_two h3 {
+        font-size: 1.3em;
+    }
+
+    .our_current_work p,
+    .our_current_work_one p,
+    .main_current_work_two p {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 480px) {
+    .CurrentCampain_page_headings h2 {
+        font-size: 1.2em;
+    }
+
+    .our_current_work h3,
+    .our_current_work_one h3,
+    .main_current_work_two h3 {
+        font-size: 1.1em;
+    }
+
+    .our_current_work p,
+    .our_current_work_one p,
+    .main_current_work_two p {
+        font-size: 12px;
+    }
+}
