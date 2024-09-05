@@ -8,7 +8,7 @@ const ManageUser = () => {
 
   useEffect(() => {
     // Fetch users from the API when the component mounts
-    fetch('http://127.0.0.1:5000/users') // Correct URL
+    fetch('http://127.0.0.1:5000/user/') // Correct URL
       .then(response => response.json())
       .then(data => setUsers(data))
       .catch(error => console.error('Error fetching users:', error));
@@ -20,7 +20,7 @@ const ManageUser = () => {
       return;
     }
 
-    fetch('http://127.0.0.1:5000/users', { // Correct URL
+    fetch('http://127.0.0.1:5000/user/', { // Correct URL
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -40,7 +40,7 @@ const ManageUser = () => {
   };
 
   const handleDeleteUser = (userId) => {
-    fetch(`http://127.0.0.1:5000/users/${userId}`, { // Correct URL
+    fetch(`http://127.0.0.1:5000/user/${userId}`, { // Correct URL
       method: 'DELETE',
     })
       .then(() => {
