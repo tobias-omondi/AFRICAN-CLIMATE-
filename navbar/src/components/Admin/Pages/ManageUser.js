@@ -53,44 +53,44 @@ const ManageUser = () => {
   };
 
   return (
-    <div style={{ padding: '20px' }}>
-      <h1>Manage Users</h1>
+    <div style={styles.container}>
+      <h1 style={styles.title}>Manage Users</h1>
 
-      <div style={{ marginBottom: '20px' }}>
-        <h2>Add New User</h2>
-        {error && <p style={{ color: 'red' }}>{error}</p>}
+      <div style={styles.formContainer}>
+        <h2 style={styles.subtitle}>Add New User</h2>
+        {error && <p style={styles.error}>{error}</p>}
         <input
           type="text"
           placeholder="Full Name"
           value={newUser.fullName}
           onChange={(e) => setNewUser({ ...newUser, fullName: e.target.value })}
-          style={{ display: 'block', margin: '10px 0' }}
+          style={styles.input}
         />
         <input
           type="email"
           placeholder="Email"
           value={newUser.email}
           onChange={(e) => setNewUser({ ...newUser, email: e.target.value })}
-          style={{ display: 'block', margin: '10px 0' }}
+          style={styles.input}
         />
         <textarea
           placeholder="Message"
           value={newUser.message}
           onChange={(e) => setNewUser({ ...newUser, message: e.target.value })}
-          style={{ display: 'block', margin: '10px 0' }}
+          style={styles.textarea}
         />
-        <button onClick={handleAddUser} style={{ marginTop: '10px' }}>Add User</button>
+        <button onClick={handleAddUser} style={styles.button}>Add User</button>
       </div>
 
-      <div>
-        <h2>User List</h2>
-        <ul style={{ listStyleType: 'none', padding: '0' }}>
+      <div style={styles.listContainer}>
+        <h2 style={styles.subtitle}>User List</h2>
+        <ul style={styles.userList}>
           {users.map(user => (
-            <li key={user.id} style={{ marginBottom: '10px' }}>
-              {user.fullName} - {user.email} - {user.message}
+            <li key={user.id} style={styles.userListItem}>
+              <span>{user.fullName} - {user.email} - {user.message}</span>
               <button 
                 onClick={() => handleDeleteUser(user.id)} 
-                style={{ marginLeft: '10px', color: 'red' }}
+                style={styles.deleteButton}
               >
                 Delete
               </button>
@@ -100,6 +100,92 @@ const ManageUser = () => {
       </div>
     </div>
   );
+};
+
+// Styles for the component
+const styles = {
+  container: {
+    padding: '20px',
+    maxWidth: '800px',
+    margin: '0 auto',
+    fontFamily: 'Arial, sans-serif',
+  },
+  title: {
+    textAlign: 'center',
+    fontSize: '2rem',
+    color: '#333',
+    marginBottom: '30px',
+  },
+  formContainer: {
+    backgroundColor: '#f9f9f9',
+    padding: '20px',
+    borderRadius: '8px',
+    boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
+    marginBottom: '30px',
+  },
+  subtitle: {
+    fontSize: '1.5rem',
+    marginBottom: '15px',
+    color: '#555',
+  },
+  error: {
+    color: 'red',
+    fontWeight: 'bold',
+    marginBottom: '10px',
+  },
+  input: {
+    width: '100%',
+    padding: '10px',
+    margin: '10px 0',
+    border: '1px solid #ccc',
+    borderRadius: '4px',
+  },
+  textarea: {
+    width: '100%',
+    padding: '10px',
+    margin: '10px 0',
+    border: '1px solid #ccc',
+    borderRadius: '4px',
+    resize: 'vertical',
+  },
+  button: {
+    backgroundColor: '#4CAF50',
+    color: 'white',
+    padding: '10px 20px',
+    border: 'none',
+    borderRadius: '4px',
+    cursor: 'pointer',
+    marginTop: '10px',
+  },
+  buttonHover: {
+    backgroundColor: '#45a049',
+  },
+  listContainer: {
+    backgroundColor: '#f9f9f9',
+    padding: '20px',
+    borderRadius: '8px',
+    boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
+  },
+  userList: {
+    listStyleType: 'none',
+    padding: '0',
+  },
+  userListItem: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    padding: '10px',
+    borderBottom: '1px solid #ccc',
+    marginBottom: '10px',
+    fontSize: '1.1rem',
+  },
+  deleteButton: {
+    backgroundColor: '#ff4d4d',
+    color: 'white',
+    border: 'none',
+    borderRadius: '4px',
+    cursor: 'pointer',
+    padding: '5px 10px',
+  },
 };
 
 export default ManageUser;
