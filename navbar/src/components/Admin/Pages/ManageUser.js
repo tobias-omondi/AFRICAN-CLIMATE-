@@ -1,4 +1,3 @@
-// src/admin/pages/ManageUser.js
 import React, { useState, useEffect } from 'react';
 
 const ManageUser = () => {
@@ -59,20 +58,22 @@ const ManageUser = () => {
       <div style={styles.formContainer}>
         <h2 style={styles.subtitle}>Add New User</h2>
         {error && <p style={styles.error}>{error}</p>}
-        <input
-          type="text"
-          placeholder="Full Name"
-          value={newUser.fullName}
-          onChange={(e) => setNewUser({ ...newUser, fullName: e.target.value })}
-          style={styles.input}
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          value={newUser.email}
-          onChange={(e) => setNewUser({ ...newUser, email: e.target.value })}
-          style={styles.input}
-        />
+        <div style={styles.inputRow}>
+          <input
+            type="text"
+            placeholder="Full Name"
+            value={newUser.fullName}
+            onChange={(e) => setNewUser({ ...newUser, fullName: e.target.value })}
+            style={styles.input}
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            value={newUser.email}
+            onChange={(e) => setNewUser({ ...newUser, email: e.target.value })}
+            style={styles.input}
+          />
+        </div>
         <textarea
           placeholder="Message"
           value={newUser.message}
@@ -133,10 +134,14 @@ const styles = {
     fontWeight: 'bold',
     marginBottom: '10px',
   },
+  inputRow: {
+    display: 'flex',
+    gap: '10px',
+    marginBottom: '10px',
+  },
   input: {
-    width: '100%',
+    flex: 1,
     padding: '10px',
-    margin: '10px 0',
     border: '1px solid #ccc',
     borderRadius: '4px',
   },
@@ -151,7 +156,7 @@ const styles = {
   button: {
     backgroundColor: '#4CAF50',
     color: 'white',
-    padding: '10px 20px',
+    padding: '8px 15px', // Smaller button
     border: 'none',
     borderRadius: '4px',
     cursor: 'pointer',

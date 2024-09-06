@@ -24,6 +24,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
+    "axios": "^1.7.7",
     "formik": "^2.4.6",
     "google-map-react": "^2.2.1",
     "ol": "^10.1.0",

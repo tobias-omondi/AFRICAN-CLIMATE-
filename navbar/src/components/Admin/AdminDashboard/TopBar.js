@@ -7,7 +7,7 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 
 const TopBar = () => {
   return (
-    <AppBar position="static" sx={{ backgroundColor: '#e5e9eb', color: 'black' }}>
+    <AppBar position="static" sx={{ backgroundColor: '#a5cce2', color: 'black' }}>
       <Toolbar>
         <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
           <MenuIcon />

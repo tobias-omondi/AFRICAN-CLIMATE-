@@ -1,0 +1,94 @@
+.ManageNews .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ManageNews h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.ManageNews .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.ManageNews input[type="text"],
+.ManageNews textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.ManageNews input[type="text"]:focus,
+.ManageNews textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.ManageNews button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ManageNews button:hover {
+    background-color: #0056b3;
+}
+
+.ManageNews .newsList {
+    margin-top: 20px;
+}
+
+.ManageNews .newsItem {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ManageNews .newsContent h2 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.ManageNews .newsContent p {
+    color: #555;
+}
+
+.ManageNews .newsContent img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.ManageNews .newsActions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.ManageNews .newsActions button {
+    background-color: #dc3545; /* Red for delete */
+}
+
+.ManageNews .newsActions button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}

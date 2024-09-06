@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from '../Footer';
 import Swal from 'sweetalert2';
-import './NewsLatter.css';
+import './News__Latter.css';
 
 const NewsLatter = () => {
 

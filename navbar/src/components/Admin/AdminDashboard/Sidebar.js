@@ -8,7 +8,7 @@ const Sidebar = () => {
   return (
     <div style={{
       width: '250px',
-      backgroundColor: '#e5e9eb',
+      backgroundColor: 'rgb(207, 173, 131)',
       padding: '12px',
       display: 'flex',
       flexDirection: 'column',
