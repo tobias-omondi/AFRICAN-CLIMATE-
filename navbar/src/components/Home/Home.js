@@ -8,8 +8,15 @@ import { Button } from 'react-scroll';
 import AOS from 'aos';
 import 'aos/dist/aos.css';  // Make sure this line is present to include AOS CSS
 import SliderImages from './SliderImages';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 const Home = () => {
+
+  const Navigate = useNavigate()
+
+  const handleNavigation= () =>{
+    Navigate('/contact/newsletter')
+  }
 
     useEffect(() => {
       AOS.init({ 
@@ -27,7 +34,7 @@ const Home = () => {
       <div className='home_container' style={{ paddingTop: '64px' }}>
         <div className='landing-container'>
           <h2 data-aos="zoom-in">DELIVERING CLIMATIC<br /> TO AFRICAN CONTINENT.</h2>
-          <Button type='submit' data-aos="zoom-in" >Newsletter-Signup</Button>
+          <Button type='submit' data-aos="zoom-in" onClick={handleNavigation}>Newsletter-Signup</Button>
         </div>
       </div>
 

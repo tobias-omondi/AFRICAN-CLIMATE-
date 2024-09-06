@@ -5,27 +5,24 @@ import Swal from 'sweetalert2';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faTwitter, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-// Define a placeholder API URL
-// const PLACEHOLDER_API_URL = 'https://jsonplaceholder.typicode.com/posts/1';
-
 const Contact = () => {
   const [result, setResult] = useState("");
   const [apiData, setApiData] = useState(null);
 
-  // Fetch data from API on component mount
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const response = await fetch(PLACEHOLDER_API_URL);
-  //       const data = await response.json();
-  //       setApiData(data);  // Save the data to state
-  //     } catch (error) {
-  //       console.error('Error fetching data:', error);
-  //     }
-  //   };
+  // Fetch data from the Flask backend on component mount
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('http://127.0.0.1:5000/user'); // Flask API endpoint
+        const data = await response.json();
+        setApiData(data);  // Save the data to state
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
 
-  //   fetchData();
-  // }, []);
+    fetchData();
+  }, []);
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -120,14 +117,6 @@ const Contact = () => {
             <div className='input_box'>
               <label>Email:</label>
               <input type='email' className='field' placeholder='Enter your email' name='email' required />
-            </div>
-            <div className='input_box'>
-              <label>Password:</label>
-              <input type='password' className='field' placeholder='Enter your Password' name='password' required />
-            </div>
-            <div className='input_box'>
-              <label>Confirm Password:</label>
-              <input type='password' className='field' placeholder='Confirm your Password' name='confirm_password' required />
             </div>
             <div className='input_box'>
               <label>Your Message:</label>

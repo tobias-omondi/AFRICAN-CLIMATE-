@@ -14,6 +14,10 @@ const News = () => {
          more mindful future."</p>
       </div>
     </div>
+    {/* fetching news data */}
+    <div className='news_data'>
+
+    </div>
     <Footer />
     </>
   )
