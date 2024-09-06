@@ -158,9 +158,8 @@
     max-width: 550px;
     height: auto;
 }
-
 .Africa_paragraph {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: white;
     padding: 20px;
     margin: 20px auto;
     text-align: center;
@@ -181,7 +180,7 @@
 
 .Africa p {
     font-size: 18px;
-    color: #555;
+    color: #003;
     line-height: 1.6;
     font-family: "Open Sans", sans-serif;
     width: 100%;
@@ -543,6 +542,6 @@
     .Africa p {
         font-size: 20px;
         line-height: 1.4;
-        color: #555;
+        color: #000;
     }
 }
