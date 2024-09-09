@@ -16,7 +16,7 @@ const News = () => {
     </div>
     {/* fetching news data */}
     <div className='news_data'>
-
+      <p>this page will fetch news data</p>
     </div>
     <Footer />
     </>
