@@ -1,12 +1,12 @@
 import React from 'react'
-import './Documentaries.css'
+import './Interview.css'
 import Footer from '../Footer'
 
-const Documentaries = () => {
+const Interview = () => {
   return (
     <div>
-      <div className='docs_page'>
-        <div className='docs_heading'>
+      <div className='interview_page'>
+        <div className='interview_heading'>
             <h1>INTERVIEW PAGE</h1>
         </div>
       </div>
@@ -16,4 +16,4 @@ const Documentaries = () => {
   )
 }
 
-export default Documentaries
+export default Interview

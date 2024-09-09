@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-.podcast_page {
+.interview_page {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center content vertically */
@@ -24,7 +24,7 @@
     object-fit: cover;
     margin-top: 10%;
 }
-.podcast_page:before {
+.interview_page:before {
     content: '';
     position: absolute;
     top: 0;
@@ -35,11 +35,11 @@
     z-index: 1; /* Ensure the overlay is on top of the image */
 }
 
-.podcast_page > * {
+.interview_page > * {
     position: relative;
     z-index: 2; /* Ensure the content is above the overlay */
 }
-.podcast_heading h1 {
+.interview_heading h1 {
     text-decoration: underline;
     color: #fff;
     text-align: center;
@@ -48,7 +48,7 @@
     font-style: normal;
     font-size: 3rem;
 }
-.podcast_heading p {
+.interview_heading p {
     color: #fff;
     font-size: 20px;
     text-align: center;
@@ -59,7 +59,7 @@
     width: 100%; 
     max-width: 800px; 
   }
-.podcast_content{
+.interview_content{
     display: flex;
     flex-direction: column;
     align-items: center;

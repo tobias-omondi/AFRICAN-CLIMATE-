@@ -19,7 +19,7 @@ const Community_Spotlight = () => {
             <p>
               The <strong>Community Spotlight</strong> is a vital platform that shines a light on the inspiring efforts of individuals, organizations, and grassroots movements working tirelessly to uplift their communities. At its core, the Community Spotlight seeks to recognize and celebrate the unsung heroes who often operate behind the scenes, but whose contributions have a profound and lasting impact on the social, cultural, and environmental landscape. These spotlights may focus on a wide variety of initiatives, from environmental conservation projects and social justice movements to educational outreach and economic empowerment programs.
             </p>
-            <p>
+            <p style={{backgroundColor:'gray'}}>
              <mark>What makes the Community Spotlight so powerful is its ability to bring diverse stories to the forefront, giving voice to those who are making a difference, whether on a local or global scale.</mark> Through storytelling, interviews, and case studies, the initiative highlights the challenges these changemakers face, the innovative solutions they devise, and the far-reaching effects of their work.
             </p>
             <p>
