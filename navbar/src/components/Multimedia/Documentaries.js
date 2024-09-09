@@ -10,7 +10,7 @@ const Documentaries = () => {
             <h1>INTERVIEW PAGE</h1>
         </div>
       </div>
-      <div> <p>This page will fetcht data for interview  data</p></div>
+      <div> <p>This page will fetcht data for documentary </p></div>
       <Footer />
     </div>
   )
