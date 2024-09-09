@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Swal from 'sweetalert2';
+import { borderBottom, fontFamily, fontWeight, maxWidth, width } from '@mui/system';
 
 const ManageNews = () => {
     const [newsList, setNewsList] = useState([]);
@@ -69,44 +70,59 @@ const ManageNews = () => {
     };
 
     const containerStyle = {
-        maxWidth: '800px',
+        width:'100%',
         margin: '0 auto',
-        padding: '20px',
-        backgroundColor: '#f9f9f9',
+        padding: '2px',
+        backgroundColor: '#ff51',
         borderRadius: '8px',
-        boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
+        boxShadow: "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
     };
 
     const headerStyle = {
         textAlign: 'center',
-        color: '#333',
-        marginBottom: '20px',
+        color: '#999',
+        marginBottom: '10px',
+        fontFamily: "serif",
+        borderBottom:'1px solid blue',
     };
 
     const formStyle = {
         display: 'flex',
-        flexDirection: 'column',
-        gap: '15px',
-        marginBottom: '30px',
+        flexDirection: 'row',
+        gap: '10px',
+        marginBottom: '10px',
+        width: '100%',
+        maxWidth:'900px'
     };
 
     const inputStyle = {
-        padding: '10px',
-        border: '1px solid #ccc',
+        padding: '5px',
+        border: '1px solid blue',
         borderRadius: '4px',
-        fontSize: '16px',
+        fontSize: '1.2rem',
         transition: 'border-color 0.3s',
+        fontFamily: "serif",
+        fontWeight: 300,
+        width:'100%',
+        maxWidth:'1200px',
     };
 
     const buttonStyle = {
-        padding: '10px',
+        padding: '5px',
         backgroundColor: '#007bff',
+        fontFamily: "serif",
+        fontWeight: 300,
         color: 'white',
         border: 'none',
         borderRadius: '4px',
-        fontSize: '16px',
+        fontSize: '1rem',
         cursor: 'pointer',
         transition: 'background-color 0.3s',
+        width:'100%',
+        maxWidth:'100px',
+        '&:hover': {
+            backgroundColor: 'green',
+        },
     };
 
     const newsItemStyle = {

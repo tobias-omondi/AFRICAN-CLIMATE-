@@ -11,6 +11,7 @@ import ManageDocs from '../Pages/ManageDocs';
 import ManagePanelDiscussion from '../Pages/ManagePanelDiscusion';
 import ManagePodcast from '../Pages/ManagePodcast';
 import ManageAdmin from '../Pages/ManageAdimin';
+import ManageInterview from '../Pages/ManageInterview';
 
 const AdminDashboard = () => {
   return (
@@ -25,13 +26,14 @@ const AdminDashboard = () => {
         {/* Main content area */}
         <Box sx={{ flexGrow: 1, p: 2 }}>
           <Routes>
-          <Route path="/manage-admin" element={<ManageAdmin/>} />
+          <Route path="/manage-admins" element={<ManageAdmin/>} />
             <Route path="/manage-users" element={<ManageUser/>} />
             <Route path = "/news" element = {<ManageNews/>} />
             <Route path = "/multimedia" element = {<ManageMultimedia/>} />
             <Route path = "/documentary" element = {<ManageDocs/>} />
-            <Route path = "/panel-discusion" element = {<ManagePanelDiscussion/>} />
-            <Route path = "/panel-discusion" element = {<ManagePodcast/>} />
+            <Route path = "/panel-discussion" element = {<ManagePanelDiscussion/>} />
+            <Route path = "/podcast" element = {<ManagePodcast/>} />
+            <Route path = "/interviews" element = {<ManageInterview/>} />
             {/* Add other routes as needed */}
           </Routes>
         </Box>

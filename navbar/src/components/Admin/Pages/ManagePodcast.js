@@ -3,7 +3,7 @@ import axios from 'axios';
 import Swal from 'sweetalert2';
 
 const ManagePodcast = () => {
-    const [podcasts, setPodcasts] = useState([]);
+    const [podcastsList, setPodcastsList] = useState([]);
     const [formData, setFormData] = useState({
         title: '',
         description: '',
@@ -18,7 +18,7 @@ const ManagePodcast = () => {
     const fetchPodcasts = async () => {
         try {
             const response = await axios.get('http://127.0.0.1:5000/podcast');
-            setPodcasts(response.data);
+            setPodcastsList(response.data);
         } catch (error) {
             console.error('Error fetching podcasts:', error);
         }
@@ -68,10 +68,87 @@ const ManagePodcast = () => {
         }
     };
 
+    const containerStyle = {
+        width: '100%',
+        margin: '0 auto',
+        padding: '20px',
+        backgroundColor: '#f5f5f5',
+        borderRadius: '8px',
+        boxShadow: "rgba(0, 0, 0, 0.1) 0px 1px 3px",
+    };
+
+    const headerStyle = {
+        textAlign: 'center',
+        color: '#333',
+        marginBottom: '10px',
+        fontFamily: 'serif',
+        borderBottom: '1px solid blue',
+    };
+
+    const formStyle = {
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '10px',
+        marginBottom: '10px',
+        width: '100%',
+        maxWidth: '600px',
+        margin: '0 auto',
+    };
+
+    const inputStyle = {
+        padding: '10px',
+        border: '1px solid blue',
+        borderRadius: '4px',
+        fontSize: '1.2rem',
+        transition: 'border-color 0.3s',
+        fontFamily: 'serif',
+        fontWeight: 300,
+        width: '100%',
+    };
+
+    const buttonStyle = {
+        padding: '10px',
+        backgroundColor: '#007bff',
+        fontFamily: 'serif',
+        fontWeight: 300,
+        color: 'white',
+        border: 'none',
+        borderRadius: '4px',
+        fontSize: '1rem',
+        cursor: 'pointer',
+        transition: 'background-color 0.3s',
+        '&:hover': {
+            backgroundColor: '#0056b3',
+        },
+    };
+
+    const docItemStyle = {
+        backgroundColor: 'white',
+        border: '1px solid #ddd',
+        borderRadius: '4px',
+        padding: '15px',
+        marginBottom: '15px',
+        boxShadow: '0 1px 5px rgba(0, 0, 0, 0.1)',
+    };
+
+    const docActionsStyle = {
+        display: 'flex',
+        justifyContent: 'space-between',
+        marginTop: '15px',
+    };
+
+    const deleteButtonStyle = {
+        ...buttonStyle,
+        backgroundColor: '#dc3545',
+        '&:hover': {
+            backgroundColor: '#c82333',
+        },
+    };
+
     return (
-        <div>
-            <h1>Manage Podcasts</h1>
-            <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'row', gap: '10px' }}>
+        <div style={containerStyle}>
+            <h1 style={headerStyle}>Manage Podcasts</h1>
+            <form style={formStyle} onSubmit={handleSubmit}>
                 <input
                     type="text"
                     name="title"
@@ -79,16 +156,15 @@ const ManagePodcast = () => {
                     onChange={handleInputChange}
                     placeholder="Title"
                     required
-                    style={{ marginRight: '10px' }}
+                    style={inputStyle}
                 />
-                <input
-                    type="text"
+                <textarea
                     name="description"
                     value={formData.description}
                     onChange={handleInputChange}
                     placeholder="Description"
                     required
-                    style={{ marginRight: '10px' }}
+                    style={inputStyle}
                 />
                 <input
                     type="text"
@@ -97,21 +173,31 @@ const ManagePodcast = () => {
                     onChange={handleInputChange}
                     placeholder="Audio URL"
                     required
-                    style={{ marginRight: '10px' }}
+                    style={inputStyle}
                 />
-                <button type="submit">{editId ? 'Update Podcast' : 'Create Podcast'}</button>
+                <button type="submit" style={buttonStyle}>
+                    {editId ? 'Update Podcast' : 'Create Podcast'}
+                </button>
             </form>
-            <ul>
-                {podcasts.map(podcast => (
-                    <li key={podcast.id}>
+            <div>
+                {podcastsList.map(podcast => (
+                    <div key={podcast.id} style={docItemStyle}>
                         <h2>{podcast.title}</h2>
                         <p>{podcast.description}</p>
-                        {podcast.audio_url && <audio controls src={podcast.audio_url} />}
-                        <button onClick={() => handleEdit(podcast)}>Edit</button>
-                        <button onClick={() => handleDelete(podcast.id)}>Delete</button>
-                    </li>
+                        <a href={podcast.audio_url} target="_blank" rel="noopener noreferrer">
+                            Listen to the Podcast
+                        </a>
+                        <div style={docActionsStyle}>
+                            <button onClick={() => handleEdit(podcast)} style={buttonStyle}>
+                                Edit
+                            </button>
+                            <button onClick={() => handleDelete(podcast.id)} style={deleteButtonStyle}>
+                                Delete
+                            </button>
+                        </div>
+                    </div>
                 ))}
-            </ul>
+            </div>
         </div>
     );
 };

@@ -2,25 +2,41 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Swal from 'sweetalert2';
 
+const Loader = () => (
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100px' }}>
+        <div style={{
+            border: '4px solid rgba(0, 0, 0, 0.1)',
+            borderLeftColor: '#4CAF50',
+            borderRadius: '50%',
+            width: '40px',
+            height: '40px',
+            animation: 'spin 1s linear infinite'
+        }}></div>
+    </div>
+);
+
 const ManageAdmin = () => {
     const [admins, setAdmins] = useState([]);
     const [formData, setFormData] = useState({
         username: '',
-        email: '',
         password: '',
     });
     const [editId, setEditId] = useState(null);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         fetchAdmins();
     }, []);
 
     const fetchAdmins = async () => {
+        setLoading(true);
         try {
-            const response = await axios.get('http://127.0.0.1:5000/admin');
+            const response = await axios.get('http://127.0.0.1:5000/auth/status');
             setAdmins(response.data);
+            setLoading(false);
         } catch (error) {
             console.error('Error fetching admins:', error);
+            setLoading(false);
         }
     };
 
@@ -33,14 +49,14 @@ const ManageAdmin = () => {
         e.preventDefault();
         try {
             if (editId) {
-                await axios.put(`http://127.0.0.1:5000/admin/${editId}`, formData);
-                Swal.fire('Success', 'Admin updated successfully!', 'success');
+                await axios.put(`http://127.0.0.1:5000/admin/change-password/${editId}`, { password: formData.password });
+                Swal.fire('Success', 'Password updated successfully!', 'success');
             } else {
-                await axios.post('http://127.0.0.1:5000/admin', formData);
+                await axios.post('http://127.0.0.1:5000/admin/create', formData);
                 Swal.fire('Success', 'Admin created successfully!', 'success');
             }
             fetchAdmins();
-            setFormData({ username: '', email: '', password: '' });
+            setFormData({ username: '', password: '' });
             setEditId(null);
         } catch (error) {
             console.error('Error submitting form:', error);
@@ -51,8 +67,7 @@ const ManageAdmin = () => {
     const handleEdit = (admin) => {
         setFormData({
             username: admin.username,
-            email: admin.email,
-            password: '', // Do not populate password field
+            password: '',
         });
         setEditId(admin.id);
     };
@@ -68,10 +83,67 @@ const ManageAdmin = () => {
         }
     };
 
+    // Inline styling for form, buttons, and list items
+    const containerStyle = {
+        padding: '20px',
+        maxWidth: '800px',
+        margin: '0 auto'
+    };
+
+    const formStyle = {
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        gap: '10px',
+        marginBottom: '20px'
+    };
+
+    const inputStyle = {
+        padding: '10px',
+        flex: 1,
+        fontSize: '1rem',
+        border: '1px solid #ccc',
+        borderRadius: '4px'
+    };
+
+    const buttonStyle = {
+        padding: '10px 20px',
+        backgroundColor: '#4CAF50',
+        color: 'white',
+        border: 'none',
+        borderRadius: '4px',
+        cursor: 'pointer',
+        transition: 'background-color 0.3s'
+    };
+
+    const buttonHoverStyle = {
+        backgroundColor: '#45a049'
+    };
+
+    const listItemStyle = {
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        border: '1px solid #ddd',
+        borderRadius: '4px',
+        padding: '10px',
+        marginBottom: '10px'
+    };
+
+    const actionButtonStyle = (color) => ({
+        padding: '8px 16px',
+        border: 'none',
+        borderRadius: '4px',
+        cursor: 'pointer',
+        fontSize: '1rem',
+        color: 'white',
+        backgroundColor: color,
+    });
+
     return (
-        <div>
+        <div style={containerStyle}>
             <h1>Manage Admins</h1>
-            <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'row', gap: '10px' }}>
+            <form onSubmit={handleSubmit} style={formStyle}>
                 <input
                     type="text"
                     name="username"
@@ -79,16 +151,7 @@ const ManageAdmin = () => {
                     onChange={handleInputChange}
                     placeholder="Username"
                     required
-                    style={{ marginRight: '10px' }}
-                />
-                <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    placeholder="Email"
-                    required
-                    style={{ marginRight: '10px' }}
+                    style={inputStyle}
                 />
                 <input
                     type="password"
@@ -96,20 +159,45 @@ const ManageAdmin = () => {
                     value={formData.password}
                     onChange={handleInputChange}
                     placeholder="Password"
-                    required={!editId} // Password is required only if creating a new admin
-                    style={{ marginRight: '10px' }}
+                    required={!editId}
+                    style={inputStyle}
                 />
-                <button type="submit">{editId ? 'Update Admin' : 'Create Admin'}</button>
+                <button
+                    type="submit"
+                    style={{ ...buttonStyle, ...(editId ? buttonHoverStyle : null) }}
+                >
+                    {editId ? 'Update Password' : 'Create Admin'}
+                </button>
             </form>
-            <ul>
-                {admins.map(admin => (
-                    <li key={admin.id}>
-                        <h2>{admin.username}</h2>
-                        <p>{admin.email}</p>
-                        <button onClick={() => handleEdit(admin)}>Edit</button>
-                        <button onClick={() => handleDelete(admin.id)}>Delete</button>
-                    </li>
-                ))}
+
+            <ul style={{ listStyleType: 'none', padding: 0 }}>
+                {loading ? (
+                    <Loader />
+                ) : (
+                    Array.isArray(admins) && admins.length > 0 ? (
+                        admins.map((admin) => (
+                            <li key={admin.id} style={listItemStyle}>
+                                <h2>{admin.username}</h2>
+                                <div style={{ display: 'flex', gap: '10px' }}>
+                                    <button
+                                        onClick={() => handleEdit(admin)}
+                                        style={actionButtonStyle('#2196F3')}
+                                    >
+                                        Change Password
+                                    </button>
+                                    <button
+                                        onClick={() => handleDelete(admin.id)}
+                                        style={actionButtonStyle('#f44336')}
+                                    >
+                                        Delete
+                                    </button>
+                                </div>
+                            </li>
+                        ))
+                    ) : (
+                        <p>No admins found.</p>
+                    )
+                )}
             </ul>
         </div>
     );
