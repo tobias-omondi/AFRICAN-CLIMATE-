@@ -52,8 +52,8 @@
   .nav-links {
     text-decoration: none;
     color: #000;
-    font-size: 18px; /* Slightly larger font size */
-    font-weight: 700; /* Bold for emphasis */
+    font-size: 1rem; /* Slightly larger font size */
+    font-weight: 400; /* Bold for emphasis */
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;

@@ -15,8 +15,8 @@ import CurrentCampain from './components/Advocacy/CurrentCampain';
 import NewsLatter from './components/Contact/NewsLatter';
 import PanelDiscusion from './components/Multimedia/PanelDiscusion';
 import Investigative from './components/News/Investigative';
-import Community_Spotlight from './components/News/Community_Spotlight';
 import AdminDashboard from './components/Admin/AdminDashboard/AdminDashboard';
+import Community_Spotlight from './components/News/Community_Spotlight';
 
 function App() {
   const location = useLocation();

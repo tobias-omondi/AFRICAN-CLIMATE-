@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../components/ASSET/footer_logo.jpeg';
@@ -8,6 +9,7 @@ const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState({
     news: false,
     advocacy: false,
+    multimedia: false,
     contact: false,
   });
 
@@ -20,7 +22,8 @@ const Navbar = () => {
     setDropdownOpen({
       news: false,
       advocacy: false,
-      contact:false,
+      multimedia: false,
+      contact: false,
     });
   };
 
@@ -35,6 +38,7 @@ const Navbar = () => {
     { label: 'HOME', path: '/' },
     { label: 'ABOUT', path: '/about' },
     { label: 'NEWS', path: '/news', hasDropdown: true, dropdownKey: 'news' },
+    { label: 'MULTIMEDIA', path: '/multimedia', hasDropdown: true, dropdownKey: 'multimedia' },
     { label: 'ADVOCACY', path: '/advocacy', hasDropdown: true, dropdownKey: 'advocacy' },
     { label: 'CONTACT', path: '/contact', hasDropdown: true, dropdownKey: 'contact' },
   ];
@@ -42,16 +46,19 @@ const Navbar = () => {
   const dropdownItems = {
     news: [
       { label: 'Community Spotlight', path: '/news/community-spotlight' },
-      { label: 'Multimedia', path: '/multimedia' },
+    ],
+    multimedia: [
+      { label: 'Podcast', path: '/multimedia/podcast' },
       { label: 'Panel Discussion', path: '/multimedia/panel-discussion' },
       { label: 'Interview', path: '/multimedia/interview' },
+      { label: 'Documentary', path: '/multimedia/documentary' },
     ],
     advocacy: [
       { label: 'Current Campaigns', path: '/advocacy/current' },
       { label: 'Policy', path: '/advocacy/policy' },
     ],
     contact: [
-      {label: 'Newsletter-Sign-up', path: '/contact/newsletter'}
+      { label: 'Newsletter-Sign-up', path: '/contact/newsletter' }
     ],
   };
 

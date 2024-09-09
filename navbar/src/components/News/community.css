@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-.news_page {
+.community_page {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center content vertically */
@@ -13,7 +13,7 @@
     font-family: "Merriweather", serif;
     font-weight: 500;
     font-style: normal;
-    background-image: url('https://i0.wp.com/www.dataphyte.com/wp-content/uploads/2023/09/Poverty-Children.png?fit=1200%2C675&ssl=1');
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBi40wSYfv1ZNtM5yrVFyby2UnxrhE4KWQvg&s');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
@@ -24,7 +24,7 @@
     object-fit: cover;
     margin-top: 10%;
 }
-.news_page:before {
+.community_page:before {
     content: '';
     position: absolute;
     top: 0;
@@ -35,11 +35,11 @@
     z-index: 1; /* Ensure the overlay is on top of the image */
 }
 
-.news_page > * {
+.community_page > * {
     position: relative;
     z-index: 2; /* Ensure the content is above the overlay */
 }
-.news_heading h1 {
+.community_heading h1 {
     text-decoration: underline;
     color: #fff;
     text-align: center;
@@ -48,14 +48,46 @@
     font-style: normal;
     font-size: 3rem;
 }
-.news_heading p {
+.community_heading p {
     color: #fff;
-    font-size: 1rem;
+    font-size: 20px;
     text-align: center;
     font-family: "Merriweather", serif;
-    font-weight: 900;
+    font-weight: 300;
     line-height: 1.4;
     margin: 0 auto; 
     width: 100%; 
-    max-width: 900px; 
+    max-width: 800px; 
   }
+.community_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.community_image img {
+    width: 100%;
+    max-width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .community_image img:hover {
+    transform: scale(1.05); /* Slightly enlarges the image */
+    box-shadow: rgba(0, 0, 0, 0.3) 3.95px 3.95px 4.6px; /* Increases the shadow on hover */
+  }
+  
+.community_text p {
+    width: 100%;
+    max-width: 750px;
+    line-height: 1.5;
+    color: #0c0b0b;
+    font-size: 1rem;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    line-height: 1.4;
+    margin: 0 auto;
+    
+}
