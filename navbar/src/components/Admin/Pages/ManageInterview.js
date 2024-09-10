@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Swal from 'sweetalert2';
+import './ManageInterviews.css'
 
 const ManageInterview = () => {
     const [interviewsList, setInterviewsList] = useState([]);
@@ -181,7 +182,7 @@ const ManageInterview = () => {
             </form>
             <div>
                 {interviewsList.map(interview => (
-                    <div key={interview.id} style={interviewItemStyle}>
+                    <div key={interview.id} style={interviewItemStyle} className='manage_interviews'>
                         <h2>{interview.title}</h2>
                         <p>{interview.description}</p>
                         {interview.image_url && (

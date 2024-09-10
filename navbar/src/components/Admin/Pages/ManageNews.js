@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Swal from 'sweetalert2';
 import { borderBottom, fontFamily, fontWeight, maxWidth, width } from '@mui/system';
+import './ManageNews.css'
 
 const ManageNews = () => {
     const [newsList, setNewsList] = useState([]);
@@ -199,7 +200,7 @@ const ManageNews = () => {
             </form>
             <div>
                 {newsList.map(news => (
-                    <div key={news.id} style={newsItemStyle}>
+                    <div key={news.id} style={newsItemStyle} className='manage_news'>
                         <div style={newsContentStyle}>
                             <h2>{news.title}</h2>
                             <p>{news.content}</p>

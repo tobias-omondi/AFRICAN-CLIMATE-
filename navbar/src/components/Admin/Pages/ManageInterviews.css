@@ -1,0 +1,60 @@
+.manage_interviews {
+    display: flex;
+    flex-direction: row; /* Aligns the image and content horizontally */
+    justify-content: flex-start; /* Aligns the items starting from the left */
+    align-items: center; /* Vertically centers image and text */
+    gap: 20px; /* Adds space between image and content */
+    margin-bottom: 20px; /* Space below each interview item */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    flex-wrap: wrap; /* Allows wrapping for small screens */
+}
+
+.manage_interviews img {
+    width: 150px; /* Fixed width for the image */
+    height: auto; /* Height adjusts to maintain aspect ratio */
+    border-radius: 8px;
+    object-fit: cover; /* Ensures image covers the space without distortion */
+    flex-shrink: 0; /* Prevents the image from shrinking */
+}
+
+.manage_interviews .interview_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1; /* Ensures the content takes the remaining available space */
+}
+
+.manage_interviews .interview_content h2 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.manage_interviews .interview_content p {
+    margin: 0;
+    color: #555;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .manage_interviews {
+        flex-direction: column; /* Stack the image and content vertically */
+        align-items: center; /* Center-align content on smaller screens */
+        padding: 20px;
+    }
+
+    .manage_interviews img {
+        width: 100%; /* Image takes up full width */
+        max-width: 300px; /* Sets a max-width to prevent it from being too large */
+        margin-bottom: 15px; /* Adds space below the image */
+    }
+
+    .manage_interviews .interview_content {
+        text-align: center; /* Center text on smaller screens */
+        align-items: center;
+    }
+}
