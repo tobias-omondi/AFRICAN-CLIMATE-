@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -66,4 +67,42 @@
     justify-content: center;
     margin-top: 3rem;
 }
-
+.Interview-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Interview-list > * {
+    flex: 0 0 30%;
+    margin: 1rem;
+}
+.post {
+    width: 100%;
+    max-width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+.post h2 {
+    font-size: 1.5rem;
+    color: #222020;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.post img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    max-height: 300px;
+}
+.post p {
+    color: #000;
+    font-size: 0.9rem;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0 auto; 
+    width: 100%; 
+}
