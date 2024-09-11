@@ -59,11 +59,119 @@
     width: 100%; 
     max-width: 800px; 
   }
-.multimedia_content{
+
+.multimedia-list {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 3rem;
-}
+    gap: 20px; /* Space between each multimedia post */
+    padding: 20px;
+  }
+  
+  .multimedia-post {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    gap: 20px; /* Space between image and text */
+  }
+  
+  .multimedia-image, .multimedia-video, .multimedia-audio {
+    max-width: 350px;
+    max-height: 450px;
+    border-radius: 5px;
+  }
+  
+  .multimedia-post-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .multimedia-post h2 {
+    margin: 0;
+    text-decoration: underline;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.2rem;
+  }
+  .HEADING_multimedia h2{
+    margin: 0;
+    margin-top: 8px;
+    font-family: "Merriweather", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.2rem;
 
+  }
+  
+  .multimedia-post p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+    width: 100%;
+    max-width: 700PX;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    line-height: 1.4;
+    margin: 0 auto;
+  }
+  
+  .multimedia-post-footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+  }
+  
+  /* .multimedia-post-footer .read-more-button {
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding-left: 10px;
+  } */
+  
+  /* .multimedia-post-footer .read-more-button:hover {
+    text-decoration: underline;
+  } */
+  .btn-mutlimedia {
+    background-color: #ffffff00;
+    color: #131111;
+    width: 8.5em;
+    height: 2.9em;
+    border: #3654ff 0.2em solid;
+    border-radius: 11px;
+    transition: all 0.6s ease;
+    margin:1.5em
+
+  }
+  .btn-mutlimedia:hover{
+    background-color: #3654ff;
+    cursor: pointer;
+  }
+ .social-media_links {
+    background-color: rgb(168, 159, 147);
+    padding: 2rem;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .social-media_links h2 {
+    margin: 0;
+    margin-top: 8px;
+    font-family: "Merriweather", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+ }
+ .social-media_links a {
+    color: rgb(0, 0, 0);
+    width: 100%;
+    max-width: 60px;
+ }
